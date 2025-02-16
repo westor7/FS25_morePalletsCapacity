@@ -2,335 +2,335 @@
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
 	<fillTypes>
 	
-        <fillType name="BREAD" title="$l10n_fillType_bread" showOnPriceTable="true" isPalletType="true">
+		<fillType name="BREAD" title="$l10n_fillType_bread" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_bread.png" />
-            <pallet filename	="pallets/bakeryBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/bakeryBoxPallet.xml" />
+		</fillType>
 		
-        <fillType name="BARREL" title="$l10n_fillType_barrel" showOnPriceTable="true" isPalletType="true">
+		<fillType name="BARREL" title="$l10n_fillType_barrel" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_barrel.png" />
-            <pallet filename	="pallets/barrelPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/barrelPallet.xml" />
+		</fillType>
 				
-        <fillType name="BATHTUB" title="$l10n_fillType_bathtub" showOnPriceTable="true" isPalletType="true">
+		<fillType name="BATHTUB" title="$l10n_fillType_bathtub" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_bathTub.png" />
-            <pallet filename	="pallets/bathtubPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/bathtubPallet.xml" />
+		</fillType>
 				
-        <fillType name="BOARDS" title="$l10n_fillType_boards" showOnPriceTable="true" isPalletType="true">
+		<fillType name="BOARDS" title="$l10n_fillType_boards" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_boards.png" />
-            <pallet filename	="pallets/boardsStackPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/boardsStackPallet.xml" />
+		</fillType>
 				
-        <fillType name="BUCKET" title="$l10n_fillType_bucket" showOnPriceTable="true" isPalletType="true">
+		<fillType name="BUCKET" title="$l10n_fillType_bucket" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_bucket.png" />
-            <pallet filename	="pallets/bucketPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/bucketPallet.xml" />
+		</fillType>
 				
-        <fillType name="BUFFALOMILK_BOTTLED" title="$l10n_fillType_buffaloMilk_bottled" showOnPriceTable="true" isPalletType="true">
+		<fillType name="BUFFALOMILK_BOTTLED" title="$l10n_fillType_buffaloMilk_bottled" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_buffaloMilk_bottled.png" />
-            <pallet filename	="pallets/buffaloMilkBottlesBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/buffaloMilkBottlesBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="BUTTER" title="$l10n_fillType_butter" showOnPriceTable="true" isPalletType="true">
+		<fillType name="BUTTER" title="$l10n_fillType_butter" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_butter.png" />
-            <pallet filename	="pallets/butterBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/butterBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="CAKE" title="$l10n_fillType_cake" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CAKE" title="$l10n_fillType_cake" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cake.png" />
-            <pallet filename	="pallets/cakePallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/cakePallet.xml" />
+		</fillType>
 				
-        <fillType name="CANNED_PEAS" title="$l10n_fillType_cannedPea" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CANNED_PEAS" title="$l10n_fillType_cannedPea" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cannedPeas.png" />
-            <pallet filename	="pallets/cannedPeasBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/cannedPeasBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="CANOLA_OIL" title="$l10n_fillType_canolaOil" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CANOLA_OIL" title="$l10n_fillType_canolaOil" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_oil_canola.png" />
-            <pallet filename	="pallets/canolaOilPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/canolaOilPallet.xml" />
+		</fillType>
 				
-        <fillType name="CARTONROLL" title="$l10n_fillType_cartonRoll" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CARTONROLL" title="$l10n_fillType_cartonRoll" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cartonRoll.png" />
-            <pallet filename	="pallets/cartonRollPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/cartonRollPallet.xml" />
+		</fillType>
 				
-        <fillType name="CEMENT" title="$l10n_fillType_cementBags" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CEMENT" title="$l10n_fillType_cementBags" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_cement.png" />
-            <pallet filename	="pallets/cementBagsPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/cementBagsPallet.xml" />
+		</fillType>
 				
-        <fillType name="CEMENTBRICKS" title="$l10n_fillType_cementBrick" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CEMENTBRICKS" title="$l10n_fillType_cementBrick" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cementBrick.png" />
-            <pallet filename	="pallets/cementBricksPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/cementBricksPallet.xml" />
+		</fillType>
 				
-        <fillType name="CEREAL" title="$l10n_fillType_cereal" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CEREAL" title="$l10n_fillType_cereal" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cereals.png" />
-            <pallet filename	="pallets/cerealsPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/cerealsPallet.xml" />
+		</fillType>
 				
-        <fillType name="CHEESE" title="$l10n_fillType_cheese" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CHEESE" title="$l10n_fillType_cheese" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cheese.png" />
-            <pallet filename	="pallets/cheesePallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/cheesePallet.xml" />
+		</fillType>
 				
-        <fillType name="CHILLI" title="$l10n_fillType_chilli" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CHILLI" title="$l10n_fillType_chilli" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_chilli.png" />
-            <pallet filename	="pallets/chilliBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/chilliBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="CHOCOLATE" title="$l10n_fillType_chocolate" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CHOCOLATE" title="$l10n_fillType_chocolate" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_chocolate.png" />
-            <pallet filename	="pallets/chocolateBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/chocolateBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="CLOTHES" title="$l10n_fillType_clothes" showOnPriceTable="true" isPalletType="true">
+		<fillType name="CLOTHES" title="$l10n_fillType_clothes" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_clothes.png" />
-            <pallet filename	="pallets/clothesBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/clothesBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="EGG" title="$l10n_fillType_egg" showOnPriceTable="true" isPalletType="true">
+		<fillType name="EGG" title="$l10n_fillType_egg" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_egg.png" />
-            <pallet	filename	="pallets/eggBoxPallet.xml" />
-        </fillType>
+			<pallet	filename	="pallets/eggBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="ENOKI" title="$l10n_fillType_enoki" showOnPriceTable="true" isPalletType="true">
+		<fillType name="ENOKI" title="$l10n_fillType_enoki" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_enoki.png" />
-            <pallet filename	="pallets/enokiBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/enokiBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="FABRIC" title="$l10n_fillType_fabric" showOnPriceTable="true" isPalletType="true">
+		<fillType name="FABRIC" title="$l10n_fillType_fabric" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_fabric.png" />
-            <pallet filename	="pallets/fabricsPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/fabricsPallet.xml" />
+		</fillType>
 				
-        <fillType name="FERMENTEDNAPACABBAGE" title="$l10n_fillType_fermentedNapaCabbage" showOnPriceTable="true" isPalletType="true">
-            <image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_fermentedNapaCabbage.png" />
-			<pallet filename	="pallets/fermentedNapaCabbageBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="FLOUR" title="$l10n_fillType_flour" showOnPriceTable="true" isPalletType="true">
-			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_flour.png" />
-            <pallet filename	="pallets/flourBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="SPINACH_BAGS" title="$l10n_fillType_spinachBag" showOnPriceTable="true" isPalletType="true">
-            <image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_spinachbags.png" />
-			<pallet filename	="pallets/freshSpinachBagsPallet.xml" />
-        </fillType>
-				
-        <fillType name="FURNITURE" title="$l10n_fillType_furniture" showOnPriceTable="true" isPalletType="true">
-			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_furniture.png" />
-            <pallet filename	="pallets/furnitureStackPallet.xml" />
-        </fillType>
-				
-        <fillType name="GARLIC" title="$l10n_fillType_garlic" showOnPriceTable="true" isPalletType="true">
-			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_garlic.png" />
-            <pallet filename	="pallets/garlicBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="GOATCHEESE" title="$l10n_fillType_goatCheese" showOnPriceTable="true" isPalletType="true">
-			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_goatCheese.png" />
-            <pallet filename	="pallets/goatCheeseBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="GOATMILK_BOTTLED" title="$l10n_fillType_goatMilk_bottled" showOnPriceTable="true" isPalletType="true">
-            <image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_goatMilk_bottled.png" />
-			<pallet filename	="pallets/goatMilkBottlesBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="GOATMILK" title="$l10n_fillType_goatMilk" showOnPriceTable="true" isBulkType="true" isPalletType="true" unitShort="$l10n_unit_literShort">
-            <image  hud			="$dataS/menu/hud/fillTypes/hud_fill_milkGoat.png" />
-			<pallet filename	="pallets/goatMilkCanPallet.xml" />
-        </fillType>
-				
-        <fillType name="GRAPEJUICE" title="$l10n_fillType_grapeJuice" showOnPriceTable="true" isPalletType="true">
-			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_grapeJuice.png" />
-            <pallet filename	="pallets/grapeJuicePallet.xml" />
-        </fillType>
-				
-        <fillType name="HONEY" title="$l10n_fillType_honey" showOnPriceTable="true" isPalletType="true">
-			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_honey.png" />
-            <pallet filename	="pallets/honeyBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="JARRED_GREENBEAN" title="$l10n_fillType_jarredGreenBean" showOnPriceTable="true" isPalletType="true">
-            <image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_jarredGreenBeans.png" />
-			<pallet filename	="pallets/jarredGreenBeansPallet.xml" />
-        </fillType>
-				
-        <fillType name="LETTUCE" title="$l10n_fillType_lettuce" showOnPriceTable="true" isPalletType="true">
-			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_lettuce.png" />
-            <pallet filename	="pallets/lettuceBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="MILK_BOTTLED" title="$l10n_fillType_milk_bottled" showOnPriceTable="true" isPalletType="true">
-            <image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cowMilk_bottled.png" />
-			<pallet filename	="pallets/milkBottlesBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="BUFFALOMOZZARELLA" title="$l10n_fillType_buffaloMozzarella" showOnPriceTable="true" isPalletType="true">
-            <image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_buffaloMozzarella.png" />
-			<pallet filename	="pallets/mozzarellaBufalaBoxPallet.xml" />
-        </fillType>
-				
-        <fillType name="NAPACABBAGE" title="$l10n_fillType_napaCabbage" showOnPriceTable="true" isPalletType="true">
+		<fillType name="FERMENTEDNAPACABBAGE" title="$l10n_fillType_fermentedNapaCabbage" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_fermentedNapaCabbage.png" />
-            <pallet filename	="pallets/napaCabbageBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/fermentedNapaCabbageBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="NOODLESOUP" title="$l10n_fillType_noodleSoup" showOnPriceTable="true" isPalletType="true">
+		<fillType name="FLOUR" title="$l10n_fillType_flour" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_flour.png" />
+			<pallet filename	="pallets/flourBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="SPINACH_BAGS" title="$l10n_fillType_spinachBag" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_spinachbags.png" />
+			<pallet filename	="pallets/freshSpinachBagsPallet.xml" />
+		</fillType>
+				
+		<fillType name="FURNITURE" title="$l10n_fillType_furniture" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_furniture.png" />
+			<pallet filename	="pallets/furnitureStackPallet.xml" />
+		</fillType>
+				
+		<fillType name="GARLIC" title="$l10n_fillType_garlic" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_garlic.png" />
+			<pallet filename	="pallets/garlicBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="GOATCHEESE" title="$l10n_fillType_goatCheese" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_goatCheese.png" />
+			<pallet filename	="pallets/goatCheeseBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="GOATMILK_BOTTLED" title="$l10n_fillType_goatMilk_bottled" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_goatMilk_bottled.png" />
+			<pallet filename	="pallets/goatMilkBottlesBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="GOATMILK" title="$l10n_fillType_goatMilk" showOnPriceTable="true" isBulkType="true" isPalletType="true" unitShort="$l10n_unit_literShort">
+			<image  hud			="$dataS/menu/hud/fillTypes/hud_fill_milkGoat.png" />
+			<pallet filename	="pallets/goatMilkCanPallet.xml" />
+		</fillType>
+				
+		<fillType name="GRAPEJUICE" title="$l10n_fillType_grapeJuice" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_grapeJuice.png" />
+			<pallet filename	="pallets/grapeJuicePallet.xml" />
+		</fillType>
+				
+		<fillType name="HONEY" title="$l10n_fillType_honey" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_honey.png" />
+			<pallet filename	="pallets/honeyBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="JARRED_GREENBEAN" title="$l10n_fillType_jarredGreenBean" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_jarredGreenBeans.png" />
+			<pallet filename	="pallets/jarredGreenBeansPallet.xml" />
+		</fillType>
+				
+		<fillType name="LETTUCE" title="$l10n_fillType_lettuce" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_lettuce.png" />
+			<pallet filename	="pallets/lettuceBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="MILK_BOTTLED" title="$l10n_fillType_milk_bottled" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_cowMilk_bottled.png" />
+			<pallet filename	="pallets/milkBottlesBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="BUFFALOMOZZARELLA" title="$l10n_fillType_buffaloMozzarella" showOnPriceTable="true" isPalletType="true">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_buffaloMozzarella.png" />
+			<pallet filename	="pallets/mozzarellaBufalaBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="NAPACABBAGE" title="$l10n_fillType_napaCabbage" showOnPriceTable="true" isPalletType="true">
+			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_fermentedNapaCabbage.png" />
+			<pallet filename	="pallets/napaCabbageBoxPallet.xml" />
+		</fillType>
+				
+		<fillType name="NOODLESOUP" title="$l10n_fillType_noodleSoup" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_noodleSoup.png" />
-            <pallet filename	="pallets/noodleSoupBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/noodleSoupBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="OLIVE_OIL" title="$l10n_fillType_oliveOil" showOnPriceTable="true" isPalletType="true">
+		<fillType name="OLIVE_OIL" title="$l10n_fillType_oliveOil" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_oil_olive.png" />
-            <pallet filename	="pallets/oliveOilPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/oliveOilPallet.xml" />
+		</fillType>
 				
-        <fillType name="OYSTER" title="$l10n_fillType_oyster" showOnPriceTable="true" isPalletType="true">
+		<fillType name="OYSTER" title="$l10n_fillType_oyster" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_oyster.png" />
-            <pallet filename	="pallets/oysterBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/oysterBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="PAPERROLL" title="$l10n_fillType_paperRoll" showOnPriceTable="true" isPalletType="true">
+		<fillType name="PAPERROLL" title="$l10n_fillType_paperRoll" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_paperRoll.png" />
-            <pallet filename	="pallets/paperRollPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/paperRollPallet.xml" />
+		</fillType>
 				
-        <fillType name="PLANKS" title="$l10n_fillType_planks" showOnPriceTable="true" isPalletType="true">
+		<fillType name="PLANKS" title="$l10n_fillType_planks" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_planks.png" />
-            <pallet filename	="pallets/planksPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/planksPallet.xml" />
+		</fillType>
 				
-        <fillType name="POTATOCHIPS" title="$l10n_fillType_potatoChips" showOnPriceTable="true" isPalletType="true">
+		<fillType name="POTATOCHIPS" title="$l10n_fillType_potatoChips" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_potatoChips.png" />
-            <pallet filename	="pallets/potatoChipsPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/potatoChipsPallet.xml" />
+		</fillType>
 				
-        <fillType name="PREFABWALL" title="$l10n_fillType_prefabWall" showOnPriceTable="true" isPalletType="true">
+		<fillType name="PREFABWALL" title="$l10n_fillType_prefabWall" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_prefabwall.png" />
-            <pallet filename	="pallets/prefabWallPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/prefabWallPallet.xml" />
+		</fillType>
 				
-        <fillType name="PRESERVEDBEETROOT" title="$l10n_fillType_preservedFoodBeetRoot" showOnPriceTable="true" isPalletType="true">
+		<fillType name="PRESERVEDBEETROOT" title="$l10n_fillType_preservedFoodBeetRoot" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_preservedFoodBeetRoot.png" />
-            <pallet filename	="pallets/preservedFoodBeetRootPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/preservedFoodBeetRootPallet.xml" />
+		</fillType>
 				
-        <fillType name="PRESERVEDCARROTS" title="$l10n_fillType_preservedFoodCarrots" showOnPriceTable="true" isPalletType="true">
+		<fillType name="PRESERVEDCARROTS" title="$l10n_fillType_preservedFoodCarrots" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_preservedFoodCarrot.png" />
-            <pallet filename	="pallets/preservedFoodCarrotsPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/preservedFoodCarrotsPallet.xml" />
+		</fillType>
 				
-        <fillType name="PRESERVEDPARSNIP" title="$l10n_fillType_preservedFoodParsnip" showOnPriceTable="true" isPalletType="true">
-            <image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_preservedFoodParsnip.png" />
+		<fillType name="PRESERVEDPARSNIP" title="$l10n_fillType_preservedFoodParsnip" showOnPriceTable="true" isPalletType="true">
+			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_preservedFoodParsnip.png" />
 			<pallet filename	="pallets/preservedFoodParsnipPallet.xml" />
-        </fillType>
+		</fillType>
 				
-        <fillType name="RAISINS" title="$l10n_fillType_raisins" showOnPriceTable="true" isPalletType="true">
+		<fillType name="RAISINS" title="$l10n_fillType_raisins" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_raisins.png" />
-            <pallet filename	="pallets/raisinBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/raisinBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="RICE_BAGS" title="$l10n_fillType_riceBag" showOnPriceTable="true" isPalletType="true">
+		<fillType name="RICE_BAGS" title="$l10n_fillType_riceBag" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_riceBags.png" />
-            <pallet filename	="pallets/riceBagsPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/riceBagsPallet.xml" />
+		</fillType>
 				
-        <fillType name="RICE_BOXES" title="$l10n_fillType_riceBox" showOnPriceTable="true" isPalletType="true">
+		<fillType name="RICE_BOXES" title="$l10n_fillType_riceBox" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_riceBoxes.png" />
-            <pallet filename	="pallets/riceBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/riceBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="RICEFLOUR" title="$l10n_fillType_riceFlour" showOnPriceTable="true" isPalletType="true">
+		<fillType name="RICEFLOUR" title="$l10n_fillType_riceFlour" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_riceFlour.png" />
-            <pallet filename	="pallets/riceFlourBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/riceFlourBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="RICE_OIL" title="$l10n_fillType_riceOil" showOnPriceTable="true" isPalletType="true">
+		<fillType name="RICE_OIL" title="$l10n_fillType_riceOil" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_riceOil.png" />
-            <pallet filename	="pallets/riceOilPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/riceOilPallet.xml" />
+		</fillType>
 				
-        <fillType name="RICEROLLS" title="$l10n_fillType_riceRolls" showOnPriceTable="true" isPalletType="true">
+		<fillType name="RICEROLLS" title="$l10n_fillType_riceRolls" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_riceRolls.png" />
-            <pallet filename	="pallets/riceRollsPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/riceRollsPallet.xml" />
+		</fillType>
 				
-        <fillType name="ROOFPLATES" title="$l10n_fillType_roofPlate" showOnPriceTable="true" isPalletType="true">
+		<fillType name="ROOFPLATES" title="$l10n_fillType_roofPlate" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_roofPlate.png" />
-            <pallet filename	="pallets/roofPlatesPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/roofPlatesPallet.xml" />
+		</fillType>
 				
-        <fillType name="ROPE" title="$l10n_fillType_rope" showOnPriceTable="true" isPalletType="true">
+		<fillType name="ROPE" title="$l10n_fillType_rope" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_rope.png" />
-            <pallet filename	="pallets/ropePallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/ropePallet.xml" />
+		</fillType>
 				
-        <fillType name="SOUPCANSMIXED" title="$l10n_fillType_soupCansMixed" showOnPriceTable="true" isPalletType="true">
+		<fillType name="SOUPCANSMIXED" title="$l10n_fillType_soupCansMixed" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan.png" />
-            <pallet filename	="pallets/soupCansPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/soupCansPallet.xml" />
+		</fillType>
 				
-        <fillType name="SOUPCANSBEETROOT" title="$l10n_fillType_soupCansBeetroot" showOnPriceTable="true" isPalletType="true">
-            <image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_beetRoot.png" />
+		<fillType name="SOUPCANSBEETROOT" title="$l10n_fillType_soupCansBeetroot" showOnPriceTable="true" isPalletType="true">
+			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_beetRoot.png" />
 			<pallet filename	="pallets/soupCansPalletBeetroot.xml" />
-        </fillType>
+		</fillType>
 				
-        <fillType name="SOUPCANSCARROTS" title="$l10n_fillType_soupCansCarrots" showOnPriceTable="true" isPalletType="true">
-            <image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_carrot.png" />
+		<fillType name="SOUPCANSCARROTS" title="$l10n_fillType_soupCansCarrots" showOnPriceTable="true" isPalletType="true">
+			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_carrot.png" />
 			<pallet filename	="pallets/soupCansPalletCarrots.xml" />
-        </fillType>
+		</fillType>
 				
-        <fillType name="SOUPCANSPARSNIP" title="$l10n_fillType_soupCansParsnip" showOnPriceTable="true" isPalletType="true">
-            <image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_parsnip.png" />
+		<fillType name="SOUPCANSPARSNIP" title="$l10n_fillType_soupCansParsnip" showOnPriceTable="true" isPalletType="true">
+			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_parsnip.png" />
 			<pallet filename	="pallets/soupCansPalletParsnip.xml" />
-        </fillType>
+		</fillType>
 				
-        <fillType name="SOUPCANSPOTATO" title="$l10n_fillType_soupCansPotato" showOnPriceTable="true" isPalletType="true">
-            <image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_potato.png" />
+		<fillType name="SOUPCANSPOTATO" title="$l10n_fillType_soupCansPotato" showOnPriceTable="true" isPalletType="true">
+			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_soupCan_potato.png" />
 			<pallet filename	="pallets/soupCansPalletPotato.xml" />
-        </fillType>
+		</fillType>
 				
-        <fillType name="SPRING_ONION" title="$l10n_fillType_springOnion" showOnPriceTable="true" isPalletType="true">
+		<fillType name="SPRING_ONION" title="$l10n_fillType_springOnion" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_springOnion.png" />
-            <pallet filename	="pallets/springOnionBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/springOnionBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="STRAWBERRY" title="$l10n_fillType_strawberry" showOnPriceTable="true" isPalletType="true">
+		<fillType name="STRAWBERRY" title="$l10n_fillType_strawberry" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_strawberry.png" />
-            <pallet filename	="pallets/strawberriesBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/strawberriesBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="SUGAR" title="$l10n_fillType_sugar" showOnPriceTable="true" isPalletType="true">
+		<fillType name="SUGAR" title="$l10n_fillType_sugar" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_sugar.png" />
-            <pallet filename	="pallets/sugarBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/sugarBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="SUNFLOWER_OIL" title="$l10n_fillType_sunflowerOil" showOnPriceTable="true" isPalletType="true">
+		<fillType name="SUNFLOWER_OIL" title="$l10n_fillType_sunflowerOil" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_oil_sunflower.png" />
-            <pallet filename	="pallets/sunflowerOilPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/sunflowerOilPallet.xml" />
+		</fillType>
 				
-        <fillType name="TOMATO" title="$l10n_fillType_tomato" showOnPriceTable="true" isPalletType="true">
+		<fillType name="TOMATO" title="$l10n_fillType_tomato" showOnPriceTable="true" isPalletType="true">
 			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_tomato.png" />
-            <pallet filename	="pallets/tomatoesBoxPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/tomatoesBoxPallet.xml" />
+		</fillType>
 				
-        <fillType name="WOODBEAM" title="$l10n_fillType_woodBeam" showOnPriceTable="true" isPalletType="true">
+		<fillType name="WOODBEAM" title="$l10n_fillType_woodBeam" showOnPriceTable="true" isPalletType="true">
 			<image  hud         ="$dataS/menu/hud/fillTypes/hud_fill_woodbeam.png" />
-            <pallet filename	="pallets/woodBeamPallet.xml" />
-        </fillType>
+			<pallet filename	="pallets/woodBeamPallet.xml" />
+		</fillType>
 				
-        <fillType name="WOOL" title="$l10n_fillType_wool" showOnPriceTable="true" isPalletType="true" unitShort="$l10n_unit_literShort">
-            <image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_wool.png" />
+		<fillType name="WOOL" title="$l10n_fillType_wool" showOnPriceTable="true" isPalletType="true" unitShort="$l10n_unit_literShort">
+			<image  hud     	="$dataS/menu/hud/fillTypes/hud_fill_wool.png" />
 			<pallet filename	="pallets/woolPallet.xml" />
-        </fillType>
+		</fillType>
 		
 	</fillTypes>
 </map>

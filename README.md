@@ -3,7 +3,7 @@
 <h1><p align="center">More Pallets Capacity for FS25</p></h1>
 
 <p align="center">
-This mod allows you to increase in <ins>Farming Simulator 2025 (FS25)</ins> your production or your husbandry pallets items capacity that your farm produce per hour. Any custom mod production that produce a new non-basegame item is NOT affected by this mod.</p>
+This mod allows you to increase in <ins>Farming Simulator 2025 (FS25)</ins> your production or your husbandry pallets items capacity that your farm produce per hour. Any custom mod production that produce a new non-basegame item is NOT affected by this mod, for example if you <code>1</code> pallet with <code>WOOL</code> that the capacity is <code>1000</code> liters then with this mod is going to be <code>10000</code> liters (x10).</p>
 
 Supported products:
 

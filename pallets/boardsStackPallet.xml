@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_boardsStackPallet</name>
+        <image>$data/objects/pallets/boardsStackPallet/store_boardsStackPallet.png</image>
+        <price>1300</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>45824</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>9216</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/boardsStackPallet/boardsStackPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.7" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="BOARDS" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="boardsStackPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="boardsStack1" tensionBeltNode="boardsStack1Tension"/>
+            <object node="boardsStack2" tensionBeltNode="boardsStack2Tension"/>
+            <object node="boardsStack3" tensionBeltNode="boardsStack3Tension"/>
+            <object node="boardsStack4" tensionBeltNode="boardsStack4Tension"/>
+            <object node="boardsStack5" tensionBeltNode="boardsStack5Tension"/>
+            <object node="boardsStack6" tensionBeltNode="boardsStack6Tension"/>
+            <object node="boardsStack7" tensionBeltNode="boardsStack7Tension"/>
+            <object node="boardsStack8" tensionBeltNode="boardsStack8Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="0.7" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.65" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="boardsStackPallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="boardsStack1" node="0>1|0" />
+        <i3dMapping id="boardsStack1Tension" node="0>1|0|0" />
+        <i3dMapping id="boardsStack2" node="0>1|1" />
+        <i3dMapping id="boardsStack2Tension" node="0>1|1|0" />
+        <i3dMapping id="boardsStack3" node="0>1|2" />
+        <i3dMapping id="boardsStack3Tension" node="0>1|2|0" />
+        <i3dMapping id="boardsStack4" node="0>1|3" />
+        <i3dMapping id="boardsStack4Tension" node="0>1|3|0" />
+        <i3dMapping id="boardsStack5" node="0>1|4" />
+        <i3dMapping id="boardsStack5Tension" node="0>1|4|0" />
+        <i3dMapping id="boardsStack6" node="0>1|5" />
+        <i3dMapping id="boardsStack6Tension" node="0>1|5|0" />
+        <i3dMapping id="boardsStack7" node="0>1|6" />
+        <i3dMapping id="boardsStack7Tension" node="0>1|6|0" />
+        <i3dMapping id="boardsStack8" node="0>1|7" />
+        <i3dMapping id="boardsStack8Tension" node="0>1|7|0" />
+    </i3dMappings>
+</vehicle>

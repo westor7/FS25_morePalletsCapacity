@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_woodBeamPallet</name>
+        <image>$data/objects/pallets/woodBeamPallet/store_woodBeamPallet.png</image>
+        <price>2912</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>32256</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>5376</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/woodBeamPallet/woodBeamPallet.i3d</filename>
+        <size width="2.8" length="0.95" height="0.95" lengthOffset="0" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="50"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="WOODBEAM" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" node="woodBeamPallet_vis">
+        <content>
+            <object node="woodBeam01" tensionBeltNode="woodBeam01"/>
+            <object node="woodBeam02" tensionBeltNode="woodBeam02"/>
+            <object node="woodBeam03" tensionBeltNode="woodBeam03"/>
+            <object node="woodBeam04" tensionBeltNode="woodBeam04"/>
+            <object node="woodBeam05" tensionBeltNode="woodBeam05"/>
+            <object node="woodBeam06" tensionBeltNode="woodBeam06"/>
+            <object node="woodBeam07" tensionBeltNode="woodBeam07"/>
+            <object node="woodBeam08" tensionBeltNode="woodBeam08"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="0.85" volumeScale="2" supportsReverb="false"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.92" jointTransY="0.092" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="woodBeamPallet_component1" node="0>" />
+        <i3dMapping id="woodBeamPallet_vis" node="0>0" />
+        <i3dMapping id="woodBeam01" node="0>0|0|0" />
+        <i3dMapping id="woodBeam02" node="0>0|0|1" />
+        <i3dMapping id="woodBeam03" node="0>0|0|2" />
+        <i3dMapping id="woodBeam04" node="0>0|0|3" />
+        <i3dMapping id="woodBeam05" node="0>0|0|4" />
+        <i3dMapping id="woodBeam06" node="0>0|0|5" />
+        <i3dMapping id="woodBeam07" node="0>0|0|6" />
+        <i3dMapping id="woodBeam08" node="0>0|0|7" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|1" />
+        <i3dMapping id="dischargeNode" node="0>0|2" />
+    </i3dMappings>
+</vehicle>

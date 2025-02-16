@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_garlicBoxPallet</name>
+        <image>$data/objects/pallets/garlicBoxPallet/store_garlicBoxPallet.png</image>
+        <price>580</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>58624</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18688</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/garlicBoxPallet/garlicBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.6" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="GARLIC" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="garlicBoxPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="garlicBox01" tensionBeltNode="garlicBox_Tension01"/>
+            <object node="garlicBox02" tensionBeltNode="garlicBox_Tension02"/>
+            <object node="garlicBox03" tensionBeltNode="garlicBox_Tension03"/>
+            <object node="garlicBox04" tensionBeltNode="garlicBox_Tension04"/>
+            <object node="garlicBox05" tensionBeltNode="garlicBox_Tension05"/>
+            <object node="garlicBox06" tensionBeltNode="garlicBox_Tension06"/>
+            <object node="garlicBox07" tensionBeltNode="garlicBox_Tension07"/>
+            <object node="garlicBox08" tensionBeltNode="garlicBox_Tension08"/>
+            <object node="garlicBox09" tensionBeltNode="garlicBox_Tension09"/>
+            <object node="garlicBox10" tensionBeltNode="garlicBox_Tension10"/>
+            <object node="garlicBox11" tensionBeltNode="garlicBox_Tension11"/>
+            <object node="garlicBox12" tensionBeltNode="garlicBox_Tension12"/>
+            <object node="garlicBox13" tensionBeltNode="garlicBox_Tension13"/>
+            <object node="garlicBox14" tensionBeltNode="garlicBox_Tension14"/>
+            <object node="garlicBox15" tensionBeltNode="garlicBox_Tension15"/>
+            <object node="garlicBox16" tensionBeltNode="garlicBox_Tension16"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPlastic" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.547" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="garlicBoxPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="garlicBox01" node="0>1|0" />
+        <i3dMapping id="garlicBox_Tension01" node="0>1|0|1" />
+        <i3dMapping id="garlicBox02" node="0>1|1" />
+        <i3dMapping id="garlicBox_Tension02" node="0>1|1|0" />
+        <i3dMapping id="garlicBox03" node="0>1|2" />
+        <i3dMapping id="garlicBox_Tension03" node="0>1|2|0" />
+        <i3dMapping id="garlicBox04" node="0>1|3" />
+        <i3dMapping id="garlicBox_Tension04" node="0>1|3|0" />
+        <i3dMapping id="garlicBox05" node="0>1|4" />
+        <i3dMapping id="garlicBox_Tension05" node="0>1|4|0" />
+        <i3dMapping id="garlicBox06" node="0>1|5" />
+        <i3dMapping id="garlicBox_Tension06" node="0>1|5|0" />
+        <i3dMapping id="garlicBox07" node="0>1|6" />
+        <i3dMapping id="garlicBox_Tension07" node="0>1|6|0" />
+        <i3dMapping id="garlicBox08" node="0>1|7" />
+        <i3dMapping id="garlicBox_Tension08" node="0>1|7|0" />
+        <i3dMapping id="garlicBox09" node="0>1|8" />
+        <i3dMapping id="garlicBox_Tension09" node="0>1|8|0" />
+        <i3dMapping id="garlicBox10" node="0>1|9" />
+        <i3dMapping id="garlicBox_Tension10" node="0>1|9|0" />
+        <i3dMapping id="garlicBox11" node="0>1|10" />
+        <i3dMapping id="garlicBox_Tension11" node="0>1|10|0" />
+        <i3dMapping id="garlicBox12" node="0>1|11" />
+        <i3dMapping id="garlicBox_Tension12" node="0>1|11|0" />
+        <i3dMapping id="garlicBox13" node="0>1|12" />
+        <i3dMapping id="garlicBox_Tension13" node="0>1|12|0" />
+        <i3dMapping id="garlicBox14" node="0>1|13" />
+        <i3dMapping id="garlicBox_Tension14" node="0>1|13|0" />
+        <i3dMapping id="garlicBox15" node="0>1|14" />
+        <i3dMapping id="garlicBox_Tension15" node="0>1|14|0" />
+        <i3dMapping id="garlicBox16" node="0>1|15" />
+        <i3dMapping id="garlicBox_Tension16" node="0>1|15|0" />
+    </i3dMappings>
+</vehicle>

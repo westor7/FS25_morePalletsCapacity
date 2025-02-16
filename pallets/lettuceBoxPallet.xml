@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_lettuceBoxPallet</name>
+        <image>$data/objects/pallets/lettuceBoxPallet/store_lettuceBoxPallet.png</image>
+        <price>600</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>318976</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>77824</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/lettuceBoxPallet/lettuceBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="LETTUCE" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="lettuceBoxPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="lettuceBox01_lod" tensionBeltNode="lettuceBox_Tension01"/>
+            <object node="lettuceBox02_lod" tensionBeltNode="lettuceBox_Tension02"/>
+            <object node="lettuceBox03_lod" tensionBeltNode="lettuceBox_Tension03"/>
+            <object node="lettuceBox04_lod" tensionBeltNode="lettuceBox_Tension04"/>
+            <object node="lettuceBox05_lod" tensionBeltNode="lettuceBox_Tension05"/>
+            <object node="lettuceBox06_lod" tensionBeltNode="lettuceBox_Tension06"/>
+            <object node="lettuceBox07_lod" tensionBeltNode="lettuceBox_Tension07"/>
+            <object node="lettuceBox08_lod" tensionBeltNode="lettuceBox_Tension08"/>
+            <object node="lettuceBox09_lod" tensionBeltNode="lettuceBox_Tension09"/>
+            <object node="lettuceBox10_lod" tensionBeltNode="lettuceBox_Tension10"/>
+            <object node="lettuceBox11_lod" tensionBeltNode="lettuceBox_Tension11"/>
+            <object node="lettuceBox12_lod" tensionBeltNode="lettuceBox_Tension12"/>
+        </content>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.8" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="lettuceBoxPallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="lettuceBox01_lod" node="0>1|0" />
+        <i3dMapping id="lettuceBox_Tension01" node="0>1|0|0|1" />
+        <i3dMapping id="lettuceBox02_lod" node="0>1|1" />
+        <i3dMapping id="lettuceBox_Tension02" node="0>1|1|0|0" />
+        <i3dMapping id="lettuceBox03_lod" node="0>1|2" />
+        <i3dMapping id="lettuceBox_Tension03" node="0>1|2|0|0" />
+        <i3dMapping id="lettuceBox04_lod" node="0>1|3" />
+        <i3dMapping id="lettuceBox_Tension04" node="0>1|3|0|0" />
+        <i3dMapping id="lettuceBox05_lod" node="0>1|4" />
+        <i3dMapping id="lettuceBox_Tension05" node="0>1|4|0|0" />
+        <i3dMapping id="lettuceBox06_lod" node="0>1|5" />
+        <i3dMapping id="lettuceBox_Tension06" node="0>1|5|0|0" />
+        <i3dMapping id="lettuceBox07_lod" node="0>1|6" />
+        <i3dMapping id="lettuceBox_Tension07" node="0>1|6|0|0" />
+        <i3dMapping id="lettuceBox08_lod" node="0>1|7" />
+        <i3dMapping id="lettuceBox_Tension08" node="0>1|7|0|0" />
+        <i3dMapping id="lettuceBox09_lod" node="0>1|8" />
+        <i3dMapping id="lettuceBox_Tension09" node="0>1|8|0|0" />
+        <i3dMapping id="lettuceBox10_lod" node="0>1|9" />
+        <i3dMapping id="lettuceBox_Tension10" node="0>1|9|0|0" />
+        <i3dMapping id="lettuceBox11_lod" node="0>1|10" />
+        <i3dMapping id="lettuceBox_Tension11" node="0>1|10|0|0" />
+        <i3dMapping id="lettuceBox12_lod" node="0>1|11" />
+        <i3dMapping id="lettuceBox_Tension12" node="0>1|11|0|0" />
+    </i3dMappings>
+</vehicle>

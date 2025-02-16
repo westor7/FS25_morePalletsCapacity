@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_riceRollsPallet</name>
+        <image>$data/objects/pallets/riceRollsPallet/store_riceRollsPallet.png</image>
+        <price>1500</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>71680</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18688</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/riceRollsPallet/riceRollsPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.55" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="RICEROLLS" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="riceRollsBoxPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="riceRollsBox01" tensionBeltNode="riceRollsBox_Tension01"/>
+            <object node="riceRollsBox02" tensionBeltNode="riceRollsBox_Tension02"/>
+            <object node="riceRollsBox03" tensionBeltNode="riceRollsBox_Tension03"/>
+            <object node="riceRollsBox04" tensionBeltNode="riceRollsBox_Tension04"/>
+            <object node="riceRollsBox05" tensionBeltNode="riceRollsBox_Tension05"/>
+            <object node="riceRollsBox06" tensionBeltNode="riceRollsBox_Tension06"/>
+            <object node="riceRollsBox07" tensionBeltNode="riceRollsBox_Tension07"/>
+            <object node="riceRollsBox08" tensionBeltNode="riceRollsBox_Tension08"/>
+            <object node="riceRollsBox09" tensionBeltNode="riceRollsBox_Tension09"/>
+            <object node="riceRollsBox10" tensionBeltNode="riceRollsBox_Tension10"/>
+            <object node="riceRollsBox11" tensionBeltNode="riceRollsBox_Tension11"/>
+            <object node="riceRollsBox12" tensionBeltNode="riceRollsBox_Tension12"/>
+            <object node="riceRollsBox13" tensionBeltNode="riceRollsBox_Tension13"/>
+            <object node="riceRollsBox14" tensionBeltNode="riceRollsBox_Tension14"/>
+            <object node="riceRollsBox15" tensionBeltNode="riceRollsBox_Tension15"/>
+            <object node="riceRollsBox16" tensionBeltNode="riceRollsBox_Tension16"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.539" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="riceRollsBoxPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="dischargeNode" node="0>1" />
+        <i3dMapping id="riceRollsBox01" node="0>2|0" />
+        <i3dMapping id="riceRollsBox_Tension01" node="0>2|0|1" />
+        <i3dMapping id="riceRollsBox02" node="0>2|1" />
+        <i3dMapping id="riceRollsBox_Tension02" node="0>2|1|0" />
+        <i3dMapping id="riceRollsBox03" node="0>2|2" />
+        <i3dMapping id="riceRollsBox_Tension03" node="0>2|2|0" />
+        <i3dMapping id="riceRollsBox04" node="0>2|3" />
+        <i3dMapping id="riceRollsBox_Tension04" node="0>2|3|0" />
+        <i3dMapping id="riceRollsBox05" node="0>2|4" />
+        <i3dMapping id="riceRollsBox_Tension05" node="0>2|4|0" />
+        <i3dMapping id="riceRollsBox06" node="0>2|5" />
+        <i3dMapping id="riceRollsBox_Tension06" node="0>2|5|0" />
+        <i3dMapping id="riceRollsBox07" node="0>2|6" />
+        <i3dMapping id="riceRollsBox_Tension07" node="0>2|6|0" />
+        <i3dMapping id="riceRollsBox08" node="0>2|7" />
+        <i3dMapping id="riceRollsBox_Tension08" node="0>2|7|0" />
+        <i3dMapping id="riceRollsBox09" node="0>2|8" />
+        <i3dMapping id="riceRollsBox_Tension09" node="0>2|8|0" />
+        <i3dMapping id="riceRollsBox10" node="0>2|9" />
+        <i3dMapping id="riceRollsBox_Tension10" node="0>2|9|0" />
+        <i3dMapping id="riceRollsBox11" node="0>2|10" />
+        <i3dMapping id="riceRollsBox_Tension11" node="0>2|10|0" />
+        <i3dMapping id="riceRollsBox12" node="0>2|11" />
+        <i3dMapping id="riceRollsBox_Tension12" node="0>2|11|0" />
+        <i3dMapping id="riceRollsBox13" node="0>2|12" />
+        <i3dMapping id="riceRollsBox_Tension13" node="0>2|12|0" />
+        <i3dMapping id="riceRollsBox14" node="0>2|13" />
+        <i3dMapping id="riceRollsBox_Tension14" node="0>2|13|0" />
+        <i3dMapping id="riceRollsBox15" node="0>2|14" />
+        <i3dMapping id="riceRollsBox_Tension15" node="0>2|14|0" />
+        <i3dMapping id="riceRollsBox16" node="0>2|15" />
+        <i3dMapping id="riceRollsBox_Tension16" node="0>2|15|0" />
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_bathtubPallet</name>
+        <image>$data/objects/pallets/bathtubPallet/store_bathtubPallet.png</image>
+        <price>1710</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>45312</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>12288</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/bathtubPallet/bathtubPallet.i3d</filename>
+        <size width="2.5" length="0.9" height="0.7" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="BATHTUB" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="linkNode01 linkNode02">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="bathtub" tensionBeltNode="bathtubTension"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="1" volumeScale="2" supportsReverb="false"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.681" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="bathtubPallet_main_component1" node="0>" />
+        <i3dMapping id="bathtub" node="0>0|0" />
+        <i3dMapping id="palletStrap" node="0>0|0|0" />
+        <i3dMapping id="bathtubTension" node="0>0|0|1" />
+        <i3dMapping id="dynamicMountTrigger" node="0>1" />
+        <i3dMapping id="dischargeNode" node="0>2" />
+        <i3dMapping id="linkNode01" node="0>4" />
+        <i3dMapping id="linkNode02" node="0>5" />
+    </i3dMappings>
+</vehicle>

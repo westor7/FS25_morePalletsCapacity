@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="94">
+	<author>westor</author>
+	<version>1.0.0.0</version>
+	<title> 
+		<en>More Pallets Capacity</en>
+		<de>Mehr Palettenkapazität</de>
+		<fr>Capacité de palettes plus importante</fr>
+	</title>
+	<description>
+		<en> <![CDATA[
+More Pallets Capacity mod increasing the following products that using pallets all to '10.000' liters.
+
+Supported Products:
+
+- BARREL
+- BATHTUB
+- BOARDS
+- BREAD
+- BUCKET
+- BUFFALOMILK_BOTTLED
+- BUFFALOMOZZARELLA
+- BUTTER
+- CAKE
+- CANNED_PEAS
+- CANOLA_OIL
+- CARTONROLL
+- CEMENT
+- CEMENTBRICKS
+- CEREAL
+- CHEESE
+- CHILLI
+- CHOCOLATE
+- CLOTHES
+- EGG
+- ENOKI
+- FABRIC
+- FERMENTEDNAPACABBAGE
+- FLOUR
+- FURNITURE
+- GARLIC
+- GOATCHEESE
+- GOATMILK
+- GOATMILK_BOTTLED
+- GRAPEJUICE
+- HONEY
+- JARRED_GREENBEAN
+- LETTUCE
+- MILK_BOTTLED
+- NAPACABBAGE
+- NOODLESOUP
+- OLIVE_OIL
+- OYSTER
+- PAPERROLL
+- PLANKS
+- POTATOCHIPS
+- PREFABWALL
+- PRESERVEDBEETROOT
+- PRESERVEDCARROTS
+- PRESERVEDPARSNIP
+- RAISINS
+- RICE_BAGS
+- RICE_BOXES
+- RICE_OIL
+- RICEFLOUR
+- RICEROLLS
+- ROOFPLATES
+- ROPE
+- SOUPCANSBEETROOT
+- SOUPCANSCARROTS
+- SOUPCANSMIXED
+- SOUPCANSPARSNIP
+- SOUPCANSPOTATO
+- SPINACH_BAGS
+- SPRING_ONION
+- STRAWBERRY
+- SUGAR
+- SUNFLOWER_OIL
+- TOMATO
+- WOODBEAM
+- WOOL]]>
+		</en>
+		<de> <![CDATA[
+Mehr Palettenkapazität erhöht die Kapazität aller folgenden Produkte, die Paletten verwenden, auf '10.000' Liter.
+
+Unterstützte Produkte:
+
+- BARREL
+- BATHTUB
+- BOARDS
+- BREAD
+- BUCKET
+- BUFFALOMILK_BOTTLED
+- BUFFALOMOZZARELLA
+- BUTTER
+- CAKE
+- CANNED_PEAS
+- CANOLA_OIL
+- CARTONROLL
+- CEMENT
+- CEMENTBRICKS
+- CEREAL
+- CHEESE
+- CHILLI
+- CHOCOLATE
+- CLOTHES
+- EGG
+- ENOKI
+- FABRIC
+- FERMENTEDNAPACABBAGE
+- FLOUR
+- FURNITURE
+- GARLIC
+- GOATCHEESE
+- GOATMILK
+- GOATMILK_BOTTLED
+- GRAPEJUICE
+- HONEY
+- JARRED_GREENBEAN
+- LETTUCE
+- MILK_BOTTLED
+- NAPACABBAGE
+- NOODLESOUP
+- OLIVE_OIL
+- OYSTER
+- PAPERROLL
+- PLANKS
+- POTATOCHIPS
+- PREFABWALL
+- PRESERVEDBEETROOT
+- PRESERVEDCARROTS
+- PRESERVEDPARSNIP
+- RAISINS
+- RICE_BAGS
+- RICE_BOXES
+- RICE_OIL
+- RICEFLOUR
+- RICEROLLS
+- ROOFPLATES
+- ROPE
+- SOUPCANSBEETROOT
+- SOUPCANSCARROTS
+- SOUPCANSMIXED
+- SOUPCANSPARSNIP
+- SOUPCANSPOTATO
+- SPINACH_BAGS
+- SPRING_ONION
+- STRAWBERRY
+- SUGAR
+- SUNFLOWER_OIL
+- TOMATO
+- WOODBEAM
+- WOOL]]>
+		</de>
+		<fr> <![CDATA[
+Capacité de palettes plus importante mod augmentant les produits suivants qui utilisent des palettes jusqu'à '10.000' litres.
+
+Produits pris en charge:
+
+- BARREL
+- BATHTUB
+- BOARDS
+- BREAD
+- BUCKET
+- BUFFALOMILK_BOTTLED
+- BUFFALOMOZZARELLA
+- BUTTER
+- CAKE
+- CANNED_PEAS
+- CANOLA_OIL
+- CARTONROLL
+- CEMENT
+- CEMENTBRICKS
+- CEREAL
+- CHEESE
+- CHILLI
+- CHOCOLATE
+- CLOTHES
+- EGG
+- ENOKI
+- FABRIC
+- FERMENTEDNAPACABBAGE
+- FLOUR
+- FURNITURE
+- GARLIC
+- GOATCHEESE
+- GOATMILK
+- GOATMILK_BOTTLED
+- GRAPEJUICE
+- HONEY
+- JARRED_GREENBEAN
+- LETTUCE
+- MILK_BOTTLED
+- NAPACABBAGE
+- NOODLESOUP
+- OLIVE_OIL
+- OYSTER
+- PAPERROLL
+- PLANKS
+- POTATOCHIPS
+- PREFABWALL
+- PRESERVEDBEETROOT
+- PRESERVEDCARROTS
+- PRESERVEDPARSNIP
+- RAISINS
+- RICE_BAGS
+- RICE_BOXES
+- RICE_OIL
+- RICEFLOUR
+- RICEROLLS
+- ROOFPLATES
+- ROPE
+- SOUPCANSBEETROOT
+- SOUPCANSCARROTS
+- SOUPCANSMIXED
+- SOUPCANSPARSNIP
+- SOUPCANSPOTATO
+- SPINACH_BAGS
+- SPRING_ONION
+- STRAWBERRY
+- SUGAR
+- SUNFLOWER_OIL
+- TOMATO
+- WOODBEAM
+- WOOL]]>
+		</fr>
+	</description>
+	
+	<multiplayer supported="true"/>
+	
+	<iconFilename>icon_morePalletsCapacity.dds</iconFilename>
+
+	<fillTypes filename="fillTypes.xml"/>
+
+	<storeItems>
+		<storeItem xmlFilename="pallets/bakeryBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/barrelPallet.xml"/>
+		<storeItem xmlFilename="pallets/bathtubPallet.xml"/>
+		<storeItem xmlFilename="pallets/boardsStackPallet.xml"/>
+		<storeItem xmlFilename="pallets/bucketPallet.xml"/>
+		<storeItem xmlFilename="pallets/buffaloMilkBottlesBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/butterBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/cakePallet.xml"/>
+		<storeItem xmlFilename="pallets/cannedPeasBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/canolaOilPallet.xml"/>
+		<storeItem xmlFilename="pallets/cartonRollPallet.xml"/>
+		<storeItem xmlFilename="pallets/cementBagsPallet.xml"/>
+		<storeItem xmlFilename="pallets/cementBricksPallet.xml"/>
+		<storeItem xmlFilename="pallets/cerealsPallet.xml"/>
+		<storeItem xmlFilename="pallets/cheesePallet.xml"/>
+		<storeItem xmlFilename="pallets/chilliBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/chocolateBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/clothesBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/eggBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/enokiBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/fabricsPallet.xml"/>
+		<storeItem xmlFilename="pallets/fermentedNapaCabbageBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/flourBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/freshSpinachBagsPallet.xml"/>
+		<storeItem xmlFilename="pallets/furnitureStackPallet.xml"/>
+		<storeItem xmlFilename="pallets/garlicBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/goatCheeseBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/goatMilkBottlesBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/goatMilkCanPallet.xml"/>
+		<storeItem xmlFilename="pallets/grapeJuicePallet.xml"/>
+		<storeItem xmlFilename="pallets/honeyBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/jarredGreenBeansPallet.xml"/>
+		<storeItem xmlFilename="pallets/lettuceBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/milkBottlesBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/mozzarellaBufalaBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/napaCabbageBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/noodleSoupBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/oliveOilPallet.xml"/>
+		<storeItem xmlFilename="pallets/oysterBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/paperRollPallet.xml"/>
+		<storeItem xmlFilename="pallets/planksPallet.xml"/>
+		<storeItem xmlFilename="pallets/potatoChipsPallet.xml"/>
+		<storeItem xmlFilename="pallets/prefabWallPallet.xml"/>
+		<storeItem xmlFilename="pallets/preservedFoodBeetRootPallet.xml"/>
+		<storeItem xmlFilename="pallets/preservedFoodCarrotsPallet.xml"/>
+		<storeItem xmlFilename="pallets/preservedFoodParsnipPallet.xml"/>
+		<storeItem xmlFilename="pallets/raisinBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/riceBagsPallet.xml"/>
+		<storeItem xmlFilename="pallets/riceBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/riceFlourBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/riceOilPallet.xml"/>
+		<storeItem xmlFilename="pallets/riceRollsPallet.xml"/>
+		<storeItem xmlFilename="pallets/roofPlatesPallet.xml"/>
+		<storeItem xmlFilename="pallets/ropePallet.xml"/>
+		<storeItem xmlFilename="pallets/soupCansPallet.xml"/>
+		<storeItem xmlFilename="pallets/soupCansPalletBeetroot.xml"/>
+		<storeItem xmlFilename="pallets/soupCansPalletCarrots.xml"/>
+		<storeItem xmlFilename="pallets/soupCansPalletParsnip.xml"/>
+		<storeItem xmlFilename="pallets/soupCansPalletPotato.xml"/>
+		<storeItem xmlFilename="pallets/springOnionBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/strawberriesBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/sugarBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/sunflowerOilPallet.xml"/>
+		<storeItem xmlFilename="pallets/tomatoesBoxPallet.xml"/>
+		<storeItem xmlFilename="pallets/woodBeamPallet.xml"/>
+		<storeItem xmlFilename="pallets/woolPallet.xml"/>
+	</storeItems>
+</modDesc>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_paperRollPallet</name>
+        <image>$data/objects/pallets/paperRollPallet/store_paperRollPallet.png</image>
+        <price>3200</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>26880</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>7936</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/paperRollPallet/paperRollPallet.i3d</filename>
+        <size width="2.5" length="1.7" height="1.7" lengthOffset="0" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="1250">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="50"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="PAPERROLL" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="linkNode01 linkNode02 linkNode03 linkNode04">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="paperRoll" tensionBeltNode="paperRollTension"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="1" volumeScale="1.5" supportsReverb="false"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.666" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="paperRollPallet_main_component1" node="0>" />
+        <i3dMapping id="paperRoll" node="0>0|0" />
+        <i3dMapping id="paperRollTension" node="0>0|0|0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>1" />
+        <i3dMapping id="dischargeNode" node="0>2" />
+        <i3dMapping id="linkNode01" node="0>4" />
+        <i3dMapping id="linkNode02" node="0>5" />
+        <i3dMapping id="linkNode03" node="0>6" />
+        <i3dMapping id="linkNode04" node="0>7" />
+    </i3dMappings>
+</vehicle>

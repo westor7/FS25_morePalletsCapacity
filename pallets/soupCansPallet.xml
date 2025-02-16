@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_soupCansPallet</name>
+        <image>$data/objects/pallets/soupCansPallet/store_soupCansPallet.png</image>
+        <price>1880</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>453120</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>116224</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/soupCansPallet/soupCansPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.85" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="450">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="$l10n_configuration_valueDefault">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SOUPCANSMIXED SOUPCANSCARROTS SOUPCANSPARSNIP SOUPCANSBEETROOT SOUPCANSPOTATO" capacity="10000" startFillType="SOUPCANSMIXED" startFillLevel="0" ignoreFillLimit="true">
+                        <fillRootNode node="0>" />
+
+                        <fillTypeMaterials>
+                            <material fillType="SOUPCANSMIXED" materialSlotName="soupCans_mat" diffuse="$data/objects/pallets/soupCansPallet/soupCansPallet_diffuse.dds"/>
+                            <material fillType="SOUPCANSCARROTS" materialSlotName="soupCans_mat" diffuse="$data/objects/pallets/soupCansPallet/soupCansPallet_carrots_diffuse.dds"/>
+                            <material fillType="SOUPCANSPARSNIP" materialSlotName="soupCans_mat" diffuse="$data/objects/pallets/soupCansPallet/soupCansPallet_parsnip_diffuse.dds"/>
+                            <material fillType="SOUPCANSBEETROOT" materialSlotName="soupCans_mat" diffuse="$data/objects/pallets/soupCansPallet/soupCansPallet_beet_diffuse.dds"/>
+                            <material fillType="SOUPCANSPOTATO" materialSlotName="soupCans_mat" diffuse="$data/objects/pallets/soupCansPallet/soupCansPallet_potato_diffuse.dds"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="soupCansPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="soupCansPallet01_lod" tensionBeltNode="soupCansPallet_tension01"/>
+            <object node="soupCansPallet02_lod" tensionBeltNode="soupCansPallet_tension02"/>
+            <object node="soupCansPallet03_lod" tensionBeltNode="soupCansPallet_tension03"/>
+            <object node="soupCansPallet04_lod" tensionBeltNode="soupCansPallet_tension04"/>
+            <object node="soupCansPallet05_lod" tensionBeltNode="soupCansPallet_tension05"/>
+            <object node="soupCansPallet06_lod" tensionBeltNode="soupCansPallet_tension06"/>
+            <object node="soupCansPallet07_lod" tensionBeltNode="soupCansPallet_tension07"/>
+            <object node="soupCansPallet08_lod" tensionBeltNode="soupCansPallet_tension08"/>
+            <object node="soupCansPallet09_lod" tensionBeltNode="soupCansPallet_tension09"/>
+            <object node="soupCansPallet10_lod" tensionBeltNode="soupCansPallet_tension10"/>
+            <object node="soupCansPallet11_lod" tensionBeltNode="soupCansPallet_tension11"/>
+            <object node="soupCansPallet12_lod" tensionBeltNode="soupCansPallet_tension12"/>
+            <object node="soupCansPallet13_lod" tensionBeltNode="soupCansPallet_tension13"/>
+            <object node="soupCansPallet14_lod" tensionBeltNode="soupCansPallet_tension14"/>
+            <object node="soupCansPallet15_lod" tensionBeltNode="soupCansPallet_tension15"/>
+            <object node="soupCansPallet16_lod" tensionBeltNode="soupCansPallet_tension16"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillOil" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.750" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="soupCansPallet_component1" node="0>" />
+        <i3dMapping id="soupCansPallet01_lod" node="0>0|0" />
+        <i3dMapping id="soupCansPallet01_lod0" node="0>0|0|0" />
+        <i3dMapping id="soupCansPallet01_lod1" node="0>0|0|1" />
+        <i3dMapping id="soupCansPallet02_lod" node="0>0|1" />
+        <i3dMapping id="soupCansPallet02_lod0" node="0>0|1|0" />
+        <i3dMapping id="soupCansPallet02_lod1" node="0>0|1|1" />
+        <i3dMapping id="soupCansPallet03_lod" node="0>0|2" />
+        <i3dMapping id="soupCansPallet03_lod0" node="0>0|2|0" />
+        <i3dMapping id="soupCansPallet03_lod1" node="0>0|2|1" />
+        <i3dMapping id="soupCansPallet04_lod" node="0>0|3" />
+        <i3dMapping id="soupCansPallet04_lod0" node="0>0|3|0" />
+        <i3dMapping id="soupCansPallet04_lod1" node="0>0|3|1" />
+        <i3dMapping id="soupCansPallet05_lod" node="0>0|4" />
+        <i3dMapping id="soupCansPallet05_lod0" node="0>0|4|0" />
+        <i3dMapping id="soupCansPallet05_lod1" node="0>0|4|1" />
+        <i3dMapping id="soupCansPallet06_lod" node="0>0|5" />
+        <i3dMapping id="soupCansPallet06_lod0" node="0>0|5|0" />
+        <i3dMapping id="soupCansPallet06_lod1" node="0>0|5|1" />
+        <i3dMapping id="soupCansPallet07_lod" node="0>0|6" />
+        <i3dMapping id="soupCansPallet07_lod0" node="0>0|6|0" />
+        <i3dMapping id="soupCansPallet07_lod1" node="0>0|6|1" />
+        <i3dMapping id="soupCansPallet08_lod" node="0>0|7" />
+        <i3dMapping id="soupCansPallet08_lod0" node="0>0|7|0" />
+        <i3dMapping id="soupCansPallet08_lod1" node="0>0|7|1" />
+        <i3dMapping id="soupCansPallet09_lod" node="0>0|8" />
+        <i3dMapping id="soupCansPallet09_lod0" node="0>0|8|0" />
+        <i3dMapping id="soupCansPallet09_lod1" node="0>0|8|1" />
+        <i3dMapping id="soupCansPallet10_lod" node="0>0|9" />
+        <i3dMapping id="soupCansPallet10_lod0" node="0>0|9|0" />
+        <i3dMapping id="soupCansPallet10_lod1" node="0>0|9|1" />
+        <i3dMapping id="soupCansPallet11_lod" node="0>0|10" />
+        <i3dMapping id="soupCansPallet11_lod0" node="0>0|10|0" />
+        <i3dMapping id="soupCansPallet11_lod1" node="0>0|10|1" />
+        <i3dMapping id="soupCansPallet12_lod" node="0>0|11" />
+        <i3dMapping id="soupCansPallet12_lod0" node="0>0|11|0" />
+        <i3dMapping id="soupCansPallet12_lod1" node="0>0|11|1" />
+        <i3dMapping id="soupCansPallet13_lod" node="0>0|12" />
+        <i3dMapping id="soupCansPallet13_lod0" node="0>0|12|0" />
+        <i3dMapping id="soupCansPallet13_lod1" node="0>0|12|1" />
+        <i3dMapping id="soupCansPallet14_lod" node="0>0|13" />
+        <i3dMapping id="soupCansPallet14_lod0" node="0>0|13|0" />
+        <i3dMapping id="soupCansPallet14_lod1" node="0>0|13|1" />
+        <i3dMapping id="soupCansPallet15_lod" node="0>0|14" />
+        <i3dMapping id="soupCansPallet15_lod0" node="0>0|14|0" />
+        <i3dMapping id="soupCansPallet15_lod1" node="0>0|14|1" />
+        <i3dMapping id="soupCansPallet16_lod" node="0>0|15" />
+        <i3dMapping id="soupCansPallet16_lod0" node="0>0|15|0" />
+        <i3dMapping id="soupCansPallet16_lod1" node="0>0|15|1" />
+        <i3dMapping id="soupCansPallet_tension01" node="0>0|16" />
+        <i3dMapping id="soupCansPallet_tension02" node="0>0|17" />
+        <i3dMapping id="soupCansPallet_tension03" node="0>0|18" />
+        <i3dMapping id="soupCansPallet_tension04" node="0>0|19" />
+        <i3dMapping id="soupCansPallet_tension05" node="0>0|20" />
+        <i3dMapping id="soupCansPallet_tension06" node="0>0|21" />
+        <i3dMapping id="soupCansPallet_tension07" node="0>0|22" />
+        <i3dMapping id="soupCansPallet_tension08" node="0>0|23" />
+        <i3dMapping id="soupCansPallet_tension09" node="0>0|24" />
+        <i3dMapping id="soupCansPallet_tension10" node="0>0|25" />
+        <i3dMapping id="soupCansPallet_tension11" node="0>0|26" />
+        <i3dMapping id="soupCansPallet_tension12" node="0>0|27" />
+        <i3dMapping id="soupCansPallet_tension13" node="0>0|28" />
+        <i3dMapping id="soupCansPallet_tension14" node="0>0|29" />
+        <i3dMapping id="soupCansPallet_tension15" node="0>0|30" />
+        <i3dMapping id="soupCansPallet_tension16" node="0>0|31" />
+        <i3dMapping id="dynamicMountTrigger" node="0>1" />
+        <i3dMapping id="dischargeNode" node="0>2" />
+    </i3dMappings>
+</vehicle>

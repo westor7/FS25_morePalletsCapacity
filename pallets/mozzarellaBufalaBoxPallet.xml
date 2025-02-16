@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_mozzarellaBuffaloBoxPallet</name>
+        <image>$data/objects/pallets/mozzarellaBufalaBoxPallet/store_mozzarellaBufalaBoxPallet.png</image>
+        <price>7500</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>935936</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>240640</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/mozzarellaBufalaBoxPallet/mozzarellaBufalaBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="BUFFALOMOZZARELLA" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="mozzarellaBufalaBoxPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="mozzarellaBufalaBox01" tensionBeltNode="mozzarellaBufalaBox_Tension01"/>
+            <object node="mozzarellaBufalaBox02" tensionBeltNode="mozzarellaBufalaBox_Tension02"/>
+            <object node="mozzarellaBufalaBox03" tensionBeltNode="mozzarellaBufalaBox_Tension03"/>
+            <object node="mozzarellaBufalaBox04" tensionBeltNode="mozzarellaBufalaBox_Tension04"/>
+            <object node="mozzarellaBufalaBox05" tensionBeltNode="mozzarellaBufalaBox_Tension05"/>
+            <object node="mozzarellaBufalaBox06" tensionBeltNode="mozzarellaBufalaBox_Tension06"/>
+            <object node="mozzarellaBufalaBox07" tensionBeltNode="mozzarellaBufalaBox_Tension07"/>
+            <object node="mozzarellaBufalaBox08" tensionBeltNode="mozzarellaBufalaBox_Tension08"/>
+            <object node="mozzarellaBufalaBox09" tensionBeltNode="mozzarellaBufalaBox_Tension09"/>
+            <object node="mozzarellaBufalaBox10" tensionBeltNode="mozzarellaBufalaBox_Tension10"/>
+            <object node="mozzarellaBufalaBox11" tensionBeltNode="mozzarellaBufalaBox_Tension11"/>
+            <object node="mozzarellaBufalaBox12" tensionBeltNode="mozzarellaBufalaBox_Tension12"/>
+            <object node="mozzarellaBufalaBox13" tensionBeltNode="mozzarellaBufalaBox_Tension13"/>
+            <object node="mozzarellaBufalaBox14" tensionBeltNode="mozzarellaBufalaBox_Tension14"/>
+            <object node="mozzarellaBufalaBox15" tensionBeltNode="mozzarellaBufalaBox_Tension15"/>
+            <object node="mozzarellaBufalaBox16" tensionBeltNode="mozzarellaBufalaBox_Tension16"/>
+            <object node="mozzarellaBufalaBox17" tensionBeltNode="mozzarellaBufalaBox_Tension17"/>
+            <object node="mozzarellaBufalaBox18" tensionBeltNode="mozzarellaBufalaBox_Tension18"/>
+            <object node="mozzarellaBufalaBox19" tensionBeltNode="mozzarellaBufalaBox_Tension19"/>
+            <object node="mozzarellaBufalaBox20" tensionBeltNode="mozzarellaBufalaBox_Tension20"/>
+            <object node="mozzarellaBufalaBox21" tensionBeltNode="mozzarellaBufalaBox_Tension21"/>
+            <object node="mozzarellaBufalaBox22" tensionBeltNode="mozzarellaBufalaBox_Tension22"/>
+            <object node="mozzarellaBufalaBox23" tensionBeltNode="mozzarellaBufalaBox_Tension23"/>
+            <object node="mozzarellaBufalaBox24" tensionBeltNode="mozzarellaBufalaBox_Tension24"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.747" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="mozzarellaBufalaBoxPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="dischargeNode" node="0>1" />
+        <i3dMapping id="mozzarellaBufalaBox01" node="0>2|0" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension01" node="0>2|0|1" />
+        <i3dMapping id="mozzarellaBufalaBox02" node="0>2|1" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension02" node="0>2|1|1" />
+        <i3dMapping id="mozzarellaBufalaBox03" node="0>2|2" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension03" node="0>2|2|1" />
+        <i3dMapping id="mozzarellaBufalaBox04" node="0>2|3" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension04" node="0>2|3|1" />
+        <i3dMapping id="mozzarellaBufalaBox05" node="0>2|4" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension05" node="0>2|4|1" />
+        <i3dMapping id="mozzarellaBufalaBox06" node="0>2|5" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension06" node="0>2|5|1" />
+        <i3dMapping id="mozzarellaBufalaBox07" node="0>2|6" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension07" node="0>2|6|1" />
+        <i3dMapping id="mozzarellaBufalaBox08" node="0>2|7" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension08" node="0>2|7|1" />
+        <i3dMapping id="mozzarellaBufalaBox09" node="0>2|8" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension09" node="0>2|8|1" />
+        <i3dMapping id="mozzarellaBufalaBox10" node="0>2|9" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension10" node="0>2|9|1" />
+        <i3dMapping id="mozzarellaBufalaBox11" node="0>2|10" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension11" node="0>2|10|1" />
+        <i3dMapping id="mozzarellaBufalaBox12" node="0>2|11" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension12" node="0>2|11|1" />
+        <i3dMapping id="mozzarellaBufalaBox13" node="0>2|12" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension13" node="0>2|12|1" />
+        <i3dMapping id="mozzarellaBufalaBox14" node="0>2|13" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension14" node="0>2|13|1" />
+        <i3dMapping id="mozzarellaBufalaBox15" node="0>2|14" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension15" node="0>2|14|1" />
+        <i3dMapping id="mozzarellaBufalaBox16" node="0>2|15" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension16" node="0>2|15|1" />
+        <i3dMapping id="mozzarellaBufalaBox17" node="0>2|16" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension17" node="0>2|16|1" />
+        <i3dMapping id="mozzarellaBufalaBox18" node="0>2|17" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension18" node="0>2|17|1" />
+        <i3dMapping id="mozzarellaBufalaBox19" node="0>2|18" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension19" node="0>2|18|1" />
+        <i3dMapping id="mozzarellaBufalaBox20" node="0>2|19" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension20" node="0>2|19|1" />
+        <i3dMapping id="mozzarellaBufalaBox21" node="0>2|20" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension21" node="0>2|20|1" />
+        <i3dMapping id="mozzarellaBufalaBox22" node="0>2|21" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension22" node="0>2|21|1" />
+        <i3dMapping id="mozzarellaBufalaBox23" node="0>2|22" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension23" node="0>2|22|1" />
+        <i3dMapping id="mozzarellaBufalaBox24" node="0>2|23" />
+        <i3dMapping id="mozzarellaBufalaBox_Tension24" node="0>2|23|1" />
+    </i3dMappings>
+</vehicle>

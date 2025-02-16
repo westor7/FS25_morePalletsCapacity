@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_tomatoesBoxPallet</name>
+        <image>$data/objects/pallets/tomatoesBoxPallet/store_tomatoesBoxPallet.png</image>
+        <price>500</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>165120</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>39424</indexBufferMemoryUsage>
+        <textureMemoryUsage>589824</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/tomatoesBoxPallet/tomatoesBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="TOMATO" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="tomatoesBoxPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="tomatoesBox01" tensionBeltNode="tomatoesBox_Tension01"/>
+            <object node="tomatoesBox02" tensionBeltNode="tomatoesBox_Tension02"/>
+            <object node="tomatoesBox03" tensionBeltNode="tomatoesBox_Tension03"/>
+            <object node="tomatoesBox04" tensionBeltNode="tomatoesBox_Tension04"/>
+            <object node="tomatoesBox05" tensionBeltNode="tomatoesBox_Tension05"/>
+            <object node="tomatoesBox06" tensionBeltNode="tomatoesBox_Tension06"/>
+            <object node="tomatoesBox07" tensionBeltNode="tomatoesBox_Tension07"/>
+            <object node="tomatoesBox08" tensionBeltNode="tomatoesBox_Tension08"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.747" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="tomatoesBoxPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="tomatoesBox01" node="0>1|0" />
+        <i3dMapping id="tomatoesBox_Tension01" node="0>1|0|1" />
+        <i3dMapping id="tomatoesBox02" node="0>1|1" />
+        <i3dMapping id="tomatoesBox_Tension02" node="0>1|1|0" />
+        <i3dMapping id="tomatoesBox03" node="0>1|2" />
+        <i3dMapping id="tomatoesBox_Tension03" node="0>1|2|0" />
+        <i3dMapping id="tomatoesBox04" node="0>1|3" />
+        <i3dMapping id="tomatoesBox_Tension04" node="0>1|3|0" />
+        <i3dMapping id="tomatoesBox05" node="0>1|4" />
+        <i3dMapping id="tomatoesBox_Tension05" node="0>1|4|0" />
+        <i3dMapping id="tomatoesBox06" node="0>1|5" />
+        <i3dMapping id="tomatoesBox_Tension06" node="0>1|5|0" />
+        <i3dMapping id="tomatoesBox07" node="0>1|6" />
+        <i3dMapping id="tomatoesBox_Tension07" node="0>1|6|0" />
+        <i3dMapping id="tomatoesBox08" node="0>1|7" />
+        <i3dMapping id="tomatoesBox_Tension08" node="0>1|7|0" />
+    </i3dMappings>
+</vehicle>

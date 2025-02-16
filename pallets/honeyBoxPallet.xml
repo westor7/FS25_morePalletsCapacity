@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_honeyBoxPallet</name>
+        <image>$data/objects/pallets/honeyBoxPallet/store_honeyBoxPallet.png</image>
+        <price>1000</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>58624</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>15360</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/honeyBoxPallet/honeyBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.7" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="HONEY" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="honeyBoxPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="honeyBox01" tensionBeltNode="honeyBox_Tension01"/>
+            <object node="honeyBox02" tensionBeltNode="honeyBox_Tension02"/>
+            <object node="honeyBox03" tensionBeltNode="honeyBox_Tension03"/>
+            <object node="honeyBox04" tensionBeltNode="honeyBox_Tension04"/>
+            <object node="honeyBox05" tensionBeltNode="honeyBox_Tension05"/>
+            <object node="honeyBox06" tensionBeltNode="honeyBox_Tension06"/>
+            <object node="honeyBox07" tensionBeltNode="honeyBox_Tension07"/>
+            <object node="honeyBox08" tensionBeltNode="honeyBox_Tension08"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.6" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="honeyBoxPallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="honeyBox01" node="0>1|0" />
+        <i3dMapping id="honeyBox_Tension01" node="0>1|0|1" />
+        <i3dMapping id="honeyBox02" node="0>1|1" />
+        <i3dMapping id="honeyBox_Tension02" node="0>1|1|0" />
+        <i3dMapping id="honeyBox03" node="0>1|2" />
+        <i3dMapping id="honeyBox_Tension03" node="0>1|2|0" />
+        <i3dMapping id="honeyBox04" node="0>1|3" />
+        <i3dMapping id="honeyBox_Tension04" node="0>1|3|0" />
+        <i3dMapping id="honeyBox05" node="0>1|4" />
+        <i3dMapping id="honeyBox_Tension05" node="0>1|4|0" />
+        <i3dMapping id="honeyBox06" node="0>1|5" />
+        <i3dMapping id="honeyBox_Tension06" node="0>1|5|0" />
+        <i3dMapping id="honeyBox07" node="0>1|6" />
+        <i3dMapping id="honeyBox_Tension07" node="0>1|6|0" />
+        <i3dMapping id="honeyBox08" node="0>1|7" />
+        <i3dMapping id="honeyBox_Tension08" node="0>1|7|0" />
+    </i3dMappings>
+</vehicle>

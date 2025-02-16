@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_grapeJuicePallet</name>
+        <image>$data/objects/pallets/grapeJuicePallet/store_grapeJuicePallet.png</image>
+        <price>1650</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>19968</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>4352</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/grapeJuicePallet/grapeJuicePallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="GRAPEJUICE" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="grapeJuicePallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="grapeJuice01" tensionBeltNode="grapeJuice_Tension01"/>
+            <object node="grapeJuice02" tensionBeltNode="grapeJuice_Tension02"/>
+            <object node="grapeJuice03" tensionBeltNode="grapeJuice_Tension03"/>
+            <object node="grapeJuice04" tensionBeltNode="grapeJuice_Tension04"/>
+            <object node="grapeJuice05" tensionBeltNode="grapeJuice_Tension05"/>
+            <object node="grapeJuice06" tensionBeltNode="grapeJuice_Tension06"/>
+            <object node="grapeJuice07" tensionBeltNode="grapeJuice_Tension07"/>
+            <object node="grapeJuice08" tensionBeltNode="grapeJuice_Tension08"/>
+            <object node="grapeJuice09" tensionBeltNode="grapeJuice_Tension09"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillOil" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.75" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="grapeJuicePallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="grapeJuice01" node="0>1|0" />
+        <i3dMapping id="grapeJuice_Tension01" node="0>1|0|1" />
+        <i3dMapping id="grapeJuice02" node="0>1|1" />
+        <i3dMapping id="grapeJuice_Tension02" node="0>1|1|1" />
+        <i3dMapping id="grapeJuice03" node="0>1|2" />
+        <i3dMapping id="grapeJuice_Tension03" node="0>1|2|1" />
+        <i3dMapping id="grapeJuice04" node="0>1|3" />
+        <i3dMapping id="grapeJuice_Tension04" node="0>1|3|1" />
+        <i3dMapping id="grapeJuice05" node="0>1|4" />
+        <i3dMapping id="grapeJuice_Tension05" node="0>1|4|1" />
+        <i3dMapping id="grapeJuice06" node="0>1|5" />
+        <i3dMapping id="grapeJuice_Tension06" node="0>1|5|1" />
+        <i3dMapping id="grapeJuice07" node="0>1|6" />
+        <i3dMapping id="grapeJuice_Tension07" node="0>1|6|1" />
+        <i3dMapping id="grapeJuice08" node="0>1|7" />
+        <i3dMapping id="grapeJuice_Tension08" node="0>1|7|1" />
+        <i3dMapping id="grapeJuice09" node="0>1|8" />
+        <i3dMapping id="grapeJuice_Tension09" node="0>1|8|1" />
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_goatCheeseBoxPallet</name>
+        <image>$data/objects/pallets/goatCheeseBoxPallet/store_goatCheeseBoxPallet.png</image>
+        <price>1760</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>43520</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>14848</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/goatCheeseBoxPallet/goatCheeseBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="GOATCHEESE" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="goatCheeseBoxPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="goatCheeseBox01" tensionBeltNode="goatCheeseBox_Tension01"/>
+            <object node="goatCheeseBox02" tensionBeltNode="goatCheeseBox_Tension02"/>
+            <object node="goatCheeseBox03" tensionBeltNode="goatCheeseBox_Tension03"/>
+            <object node="goatCheeseBox04" tensionBeltNode="goatCheeseBox_Tension04"/>
+            <object node="goatCheeseBox05" tensionBeltNode="goatCheeseBox_Tension05"/>
+            <object node="goatCheeseBox06" tensionBeltNode="goatCheeseBox_Tension06"/>
+            <object node="goatCheeseBox07" tensionBeltNode="goatCheeseBox_Tension07"/>
+            <object node="goatCheeseBox08" tensionBeltNode="goatCheeseBox_Tension08"/>
+            <object node="goatCheeseBox09" tensionBeltNode="goatCheeseBox_Tension09"/>
+            <object node="goatCheeseBox10" tensionBeltNode="goatCheeseBox_Tension10"/>
+            <object node="goatCheeseBox11" tensionBeltNode="goatCheeseBox_Tension11"/>
+            <object node="goatCheeseBox12" tensionBeltNode="goatCheeseBox_Tension12"/>
+            <object node="goatCheeseBox13" tensionBeltNode="goatCheeseBox_Tension13"/>
+            <object node="goatCheeseBox14" tensionBeltNode="goatCheeseBox_Tension14"/>
+            <object node="goatCheeseBox15" tensionBeltNode="goatCheeseBox_Tension15"/>
+            <object node="goatCheeseBox16" tensionBeltNode="goatCheeseBox_Tension16"/>
+            <object node="goatCheeseBox17" tensionBeltNode="goatCheeseBox_Tension17"/>
+            <object node="goatCheeseBox18" tensionBeltNode="goatCheeseBox_Tension18"/>
+            <object node="goatCheeseBox19" tensionBeltNode="goatCheeseBox_Tension19"/>
+            <object node="goatCheeseBox20" tensionBeltNode="goatCheeseBox_Tension20"/>
+            <object node="goatCheeseBox21" tensionBeltNode="goatCheeseBox_Tension21"/>
+            <object node="goatCheeseBox22" tensionBeltNode="goatCheeseBox_Tension22"/>
+            <object node="goatCheeseBox23" tensionBeltNode="goatCheeseBox_Tension23"/>
+            <object node="goatCheeseBox24" tensionBeltNode="goatCheeseBox_Tension24"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.747" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="goatCheeseBoxPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="dischargeNode" node="0>1" />
+        <i3dMapping id="goatCheeseBox01" node="0>2|0" />
+        <i3dMapping id="goatCheeseBox_Tension01" node="0>2|0|1" />
+        <i3dMapping id="goatCheeseBox02" node="0>2|1" />
+        <i3dMapping id="goatCheeseBox_Tension02" node="0>2|1|0" />
+        <i3dMapping id="goatCheeseBox03" node="0>2|2" />
+        <i3dMapping id="goatCheeseBox_Tension03" node="0>2|2|0" />
+        <i3dMapping id="goatCheeseBox04" node="0>2|3" />
+        <i3dMapping id="goatCheeseBox_Tension04" node="0>2|3|0" />
+        <i3dMapping id="goatCheeseBox05" node="0>2|4" />
+        <i3dMapping id="goatCheeseBox_Tension05" node="0>2|4|0" />
+        <i3dMapping id="goatCheeseBox06" node="0>2|5" />
+        <i3dMapping id="goatCheeseBox_Tension06" node="0>2|5|0" />
+        <i3dMapping id="goatCheeseBox07" node="0>2|6" />
+        <i3dMapping id="goatCheeseBox_Tension07" node="0>2|6|0" />
+        <i3dMapping id="goatCheeseBox08" node="0>2|7" />
+        <i3dMapping id="goatCheeseBox_Tension08" node="0>2|7|0" />
+        <i3dMapping id="goatCheeseBox09" node="0>2|8" />
+        <i3dMapping id="goatCheeseBox_Tension09" node="0>2|8|0" />
+        <i3dMapping id="goatCheeseBox10" node="0>2|9" />
+        <i3dMapping id="goatCheeseBox_Tension10" node="0>2|9|0" />
+        <i3dMapping id="goatCheeseBox11" node="0>2|10" />
+        <i3dMapping id="goatCheeseBox_Tension11" node="0>2|10|0" />
+        <i3dMapping id="goatCheeseBox12" node="0>2|11" />
+        <i3dMapping id="goatCheeseBox_Tension12" node="0>2|11|0" />
+        <i3dMapping id="goatCheeseBox13" node="0>2|12" />
+        <i3dMapping id="goatCheeseBox_Tension13" node="0>2|12|0" />
+        <i3dMapping id="goatCheeseBox14" node="0>2|13" />
+        <i3dMapping id="goatCheeseBox_Tension14" node="0>2|13|0" />
+        <i3dMapping id="goatCheeseBox15" node="0>2|14" />
+        <i3dMapping id="goatCheeseBox_Tension15" node="0>2|14|0" />
+        <i3dMapping id="goatCheeseBox16" node="0>2|15" />
+        <i3dMapping id="goatCheeseBox_Tension16" node="0>2|15|0" />
+        <i3dMapping id="goatCheeseBox17" node="0>2|16" />
+        <i3dMapping id="goatCheeseBox_Tension17" node="0>2|16|0" />
+        <i3dMapping id="goatCheeseBox18" node="0>2|17" />
+        <i3dMapping id="goatCheeseBox_Tension18" node="0>2|17|0" />
+        <i3dMapping id="goatCheeseBox19" node="0>2|18" />
+        <i3dMapping id="goatCheeseBox_Tension19" node="0>2|18|0" />
+        <i3dMapping id="goatCheeseBox20" node="0>2|19" />
+        <i3dMapping id="goatCheeseBox_Tension20" node="0>2|19|0" />
+        <i3dMapping id="goatCheeseBox21" node="0>2|20" />
+        <i3dMapping id="goatCheeseBox_Tension21" node="0>2|20|0" />
+        <i3dMapping id="goatCheeseBox22" node="0>2|21" />
+        <i3dMapping id="goatCheeseBox_Tension22" node="0>2|21|0" />
+        <i3dMapping id="goatCheeseBox23" node="0>2|22" />
+        <i3dMapping id="goatCheeseBox_Tension23" node="0>2|22|0" />
+        <i3dMapping id="goatCheeseBox24" node="0>2|23" />
+        <i3dMapping id="goatCheeseBox_Tension24" node="0>2|23|0" />
+    </i3dMappings>
+</vehicle>

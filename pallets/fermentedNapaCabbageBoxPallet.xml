@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_fermentedNapaCabbagePallet</name>
+        <image>$data/objects/pallets/fermentedNapaCabbageBoxPallet/store_fermentedNapaCabbageBoxPallet.png</image>
+        <price>650</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>54016</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>17664</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/fermentedNapaCabbageBoxPallet/fermentedNapaCabbageBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.75" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="FERMENTEDNAPACABBAGE" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="fermentedNapaCabbageBoxPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="fermentedCabbageBox01" tensionBeltNode="fermentedCabbageBox_tension01"/>
+            <object node="fermentedCabbageBox02" tensionBeltNode="fermentedCabbageBox_tension02"/>
+            <object node="fermentedCabbageBox03" tensionBeltNode="fermentedCabbageBox_tension03"/>
+            <object node="fermentedCabbageBox04" tensionBeltNode="fermentedCabbageBox_tension04"/>
+            <object node="fermentedCabbageBox05" tensionBeltNode="fermentedCabbageBox_tension05"/>
+            <object node="fermentedCabbageBox06" tensionBeltNode="fermentedCabbageBox_tension06"/>
+            <object node="fermentedCabbageBox07" tensionBeltNode="fermentedCabbageBox_tension07"/>
+            <object node="fermentedCabbageBox08" tensionBeltNode="fermentedCabbageBox_tension08"/>
+            <object node="fermentedCabbageBox09" tensionBeltNode="fermentedCabbageBox_tension09"/>
+            <object node="fermentedCabbageBox10" tensionBeltNode="fermentedCabbageBox_tension10"/>
+            <object node="fermentedCabbageBox11" tensionBeltNode="fermentedCabbageBox_tension11"/>
+            <object node="fermentedCabbageBox12" tensionBeltNode="fermentedCabbageBox_tension12"/>
+            <object node="fermentedCabbageBox13" tensionBeltNode="fermentedCabbageBox_tension13"/>
+            <object node="fermentedCabbageBox14" tensionBeltNode="fermentedCabbageBox_tension14"/>
+            <object node="fermentedCabbageBox15" tensionBeltNode="fermentedCabbageBox_tension15"/>
+            <object node="fermentedCabbageBox16" tensionBeltNode="fermentedCabbageBox_tension16"/>
+            <object node="fermentedCabbageBox17" tensionBeltNode="fermentedCabbageBox_tension17"/>
+            <object node="fermentedCabbageBox18" tensionBeltNode="fermentedCabbageBox_tension18"/>
+            <object node="fermentedCabbageBox19" tensionBeltNode="fermentedCabbageBox_tension19"/>
+            <object node="fermentedCabbageBox20" tensionBeltNode="fermentedCabbageBox_tension20"/>
+            <object node="fermentedCabbageBox21" tensionBeltNode="fermentedCabbageBox_tension21"/>
+            <object node="fermentedCabbageBox22" tensionBeltNode="fermentedCabbageBox_tension22"/>
+            <object node="fermentedCabbageBox23" tensionBeltNode="fermentedCabbageBox_tension23"/>
+            <object node="fermentedCabbageBox24" tensionBeltNode="fermentedCabbageBox_tension24"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.736" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="fermentedNapaCabbageBoxPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="dischargeNode" node="0>1" />
+        <i3dMapping id="fermentedCabbageBox01" node="0>2|0" />
+        <i3dMapping id="fermentedCabbageBox_tension01" node="0>2|0|1" />
+        <i3dMapping id="fermentedCabbageBox02" node="0>2|1" />
+        <i3dMapping id="fermentedCabbageBox_tension02" node="0>2|1|1" />
+        <i3dMapping id="fermentedCabbageBox03" node="0>2|2" />
+        <i3dMapping id="fermentedCabbageBox_tension03" node="0>2|2|1" />
+        <i3dMapping id="fermentedCabbageBox04" node="0>2|3" />
+        <i3dMapping id="fermentedCabbageBox_tension04" node="0>2|3|1" />
+        <i3dMapping id="fermentedCabbageBox05" node="0>2|4" />
+        <i3dMapping id="fermentedCabbageBox_tension05" node="0>2|4|1" />
+        <i3dMapping id="fermentedCabbageBox06" node="0>2|5" />
+        <i3dMapping id="fermentedCabbageBox_tension06" node="0>2|5|1" />
+        <i3dMapping id="fermentedCabbageBox07" node="0>2|6" />
+        <i3dMapping id="fermentedCabbageBox_tension07" node="0>2|6|1" />
+        <i3dMapping id="fermentedCabbageBox08" node="0>2|7" />
+        <i3dMapping id="fermentedCabbageBox_tension08" node="0>2|7|1" />
+        <i3dMapping id="fermentedCabbageBox09" node="0>2|8" />
+        <i3dMapping id="fermentedCabbageBox_tension09" node="0>2|8|1" />
+        <i3dMapping id="fermentedCabbageBox10" node="0>2|9" />
+        <i3dMapping id="fermentedCabbageBox_tension10" node="0>2|9|1" />
+        <i3dMapping id="fermentedCabbageBox11" node="0>2|10" />
+        <i3dMapping id="fermentedCabbageBox_tension11" node="0>2|10|1" />
+        <i3dMapping id="fermentedCabbageBox12" node="0>2|11" />
+        <i3dMapping id="fermentedCabbageBox_tension12" node="0>2|11|1" />
+        <i3dMapping id="fermentedCabbageBox13" node="0>2|12" />
+        <i3dMapping id="fermentedCabbageBox_tension13" node="0>2|12|1" />
+        <i3dMapping id="fermentedCabbageBox14" node="0>2|13" />
+        <i3dMapping id="fermentedCabbageBox_tension14" node="0>2|13|1" />
+        <i3dMapping id="fermentedCabbageBox15" node="0>2|14" />
+        <i3dMapping id="fermentedCabbageBox_tension15" node="0>2|14|1" />
+        <i3dMapping id="fermentedCabbageBox16" node="0>2|15" />
+        <i3dMapping id="fermentedCabbageBox_tension16" node="0>2|15|1" />
+        <i3dMapping id="fermentedCabbageBox17" node="0>2|16" />
+        <i3dMapping id="fermentedCabbageBox_tension17" node="0>2|16|1" />
+        <i3dMapping id="fermentedCabbageBox18" node="0>2|17" />
+        <i3dMapping id="fermentedCabbageBox_tension18" node="0>2|17|1" />
+        <i3dMapping id="fermentedCabbageBox19" node="0>2|18" />
+        <i3dMapping id="fermentedCabbageBox_tension19" node="0>2|18|1" />
+        <i3dMapping id="fermentedCabbageBox20" node="0>2|19" />
+        <i3dMapping id="fermentedCabbageBox_tension20" node="0>2|19|1" />
+        <i3dMapping id="fermentedCabbageBox21" node="0>2|20" />
+        <i3dMapping id="fermentedCabbageBox_tension21" node="0>2|20|1" />
+        <i3dMapping id="fermentedCabbageBox22" node="0>2|21" />
+        <i3dMapping id="fermentedCabbageBox_tension22" node="0>2|21|1" />
+        <i3dMapping id="fermentedCabbageBox23" node="0>2|22" />
+        <i3dMapping id="fermentedCabbageBox_tension23" node="0>2|22|1" />
+        <i3dMapping id="fermentedCabbageBox24" node="0>2|23" />
+        <i3dMapping id="fermentedCabbageBox_tension24" node="0>2|23|1" />
+    </i3dMappings>
+</vehicle>

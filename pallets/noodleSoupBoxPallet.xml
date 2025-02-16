@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_noodleSoupPallet</name>
+        <image>$data/objects/pallets/noodleSoupPallet/store_noodleSoupPallet.png</image>
+        <price>1550</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>72192</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>23040</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/noodleSoupPallet/noodleSoupBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.75" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="NOODLESOUP" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="noodleSoupBoxPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="noodleSoupBox01" tensionBeltNode="noodleSoupBox_Tension01"/>
+            <object node="noodleSoupBox02" tensionBeltNode="noodleSoupBox_Tension02"/>
+            <object node="noodleSoupBox03" tensionBeltNode="noodleSoupBox_Tension03"/>
+            <object node="noodleSoupBox04" tensionBeltNode="noodleSoupBox_Tension04"/>
+            <object node="noodleSoupBox05" tensionBeltNode="noodleSoupBox_Tension05"/>
+            <object node="noodleSoupBox06" tensionBeltNode="noodleSoupBox_Tension06"/>
+            <object node="noodleSoupBox07" tensionBeltNode="noodleSoupBox_Tension07"/>
+            <object node="noodleSoupBox08" tensionBeltNode="noodleSoupBox_Tension08"/>
+            <object node="noodleSoupBox09" tensionBeltNode="noodleSoupBox_Tension09"/>
+            <object node="noodleSoupBox10" tensionBeltNode="noodleSoupBox_Tension10"/>
+            <object node="noodleSoupBox11" tensionBeltNode="noodleSoupBox_Tension11"/>
+            <object node="noodleSoupBox12" tensionBeltNode="noodleSoupBox_Tension12"/>
+            <object node="noodleSoupBox13" tensionBeltNode="noodleSoupBox_Tension13"/>
+            <object node="noodleSoupBox14" tensionBeltNode="noodleSoupBox_Tension14"/>
+            <object node="noodleSoupBox15" tensionBeltNode="noodleSoupBox_Tension15"/>
+            <object node="noodleSoupBox16" tensionBeltNode="noodleSoupBox_Tension16"/>
+            <object node="noodleSoupBox17" tensionBeltNode="noodleSoupBox_Tension17"/>
+            <object node="noodleSoupBox18" tensionBeltNode="noodleSoupBox_Tension18"/>
+            <object node="noodleSoupBox19" tensionBeltNode="noodleSoupBox_Tension19"/>
+            <object node="noodleSoupBox20" tensionBeltNode="noodleSoupBox_Tension20"/>
+            <object node="noodleSoupBox21" tensionBeltNode="noodleSoupBox_Tension21"/>
+            <object node="noodleSoupBox22" tensionBeltNode="noodleSoupBox_Tension22"/>
+            <object node="noodleSoupBox23" tensionBeltNode="noodleSoupBox_Tension23"/>
+            <object node="noodleSoupBox24" tensionBeltNode="noodleSoupBox_Tension24"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPlastic" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.739" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="noodleSoupBoxPallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="dischargeNode" node="0>1" />
+        <i3dMapping id="noodleSoupBox01" node="0>2|0" />
+        <i3dMapping id="noodleSoupBox_Tension01" node="0>2|0|1" />
+        <i3dMapping id="noodleSoupBox02" node="0>2|1" />
+        <i3dMapping id="noodleSoupBox_Tension02" node="0>2|1|0" />
+        <i3dMapping id="noodleSoupBox03" node="0>2|2" />
+        <i3dMapping id="noodleSoupBox_Tension03" node="0>2|2|0" />
+        <i3dMapping id="noodleSoupBox04" node="0>2|3" />
+        <i3dMapping id="noodleSoupBox_Tension04" node="0>2|3|0" />
+        <i3dMapping id="noodleSoupBox05" node="0>2|4" />
+        <i3dMapping id="noodleSoupBox_Tension05" node="0>2|4|0" />
+        <i3dMapping id="noodleSoupBox06" node="0>2|5" />
+        <i3dMapping id="noodleSoupBox_Tension06" node="0>2|5|0" />
+        <i3dMapping id="noodleSoupBox07" node="0>2|6" />
+        <i3dMapping id="noodleSoupBox_Tension07" node="0>2|6|0" />
+        <i3dMapping id="noodleSoupBox08" node="0>2|7" />
+        <i3dMapping id="noodleSoupBox_Tension08" node="0>2|7|0" />
+        <i3dMapping id="noodleSoupBox09" node="0>2|8" />
+        <i3dMapping id="noodleSoupBox_Tension09" node="0>2|8|0" />
+        <i3dMapping id="noodleSoupBox10" node="0>2|9" />
+        <i3dMapping id="noodleSoupBox_Tension10" node="0>2|9|0" />
+        <i3dMapping id="noodleSoupBox11" node="0>2|10" />
+        <i3dMapping id="noodleSoupBox_Tension11" node="0>2|10|0" />
+        <i3dMapping id="noodleSoupBox12" node="0>2|11" />
+        <i3dMapping id="noodleSoupBox_Tension12" node="0>2|11|0" />
+        <i3dMapping id="noodleSoupBox13" node="0>2|12" />
+        <i3dMapping id="noodleSoupBox_Tension13" node="0>2|12|0" />
+        <i3dMapping id="noodleSoupBox14" node="0>2|13" />
+        <i3dMapping id="noodleSoupBox_Tension14" node="0>2|13|0" />
+        <i3dMapping id="noodleSoupBox15" node="0>2|14" />
+        <i3dMapping id="noodleSoupBox_Tension15" node="0>2|14|0" />
+        <i3dMapping id="noodleSoupBox16" node="0>2|15" />
+        <i3dMapping id="noodleSoupBox_Tension16" node="0>2|15|0" />
+        <i3dMapping id="noodleSoupBox17" node="0>2|16" />
+        <i3dMapping id="noodleSoupBox_Tension17" node="0>2|16|0" />
+        <i3dMapping id="noodleSoupBox18" node="0>2|17" />
+        <i3dMapping id="noodleSoupBox_Tension18" node="0>2|17|0" />
+        <i3dMapping id="noodleSoupBox19" node="0>2|18" />
+        <i3dMapping id="noodleSoupBox_Tension19" node="0>2|18|0" />
+        <i3dMapping id="noodleSoupBox20" node="0>2|19" />
+        <i3dMapping id="noodleSoupBox_Tension20" node="0>2|19|0" />
+        <i3dMapping id="noodleSoupBox21" node="0>2|20" />
+        <i3dMapping id="noodleSoupBox_Tension21" node="0>2|20|0" />
+        <i3dMapping id="noodleSoupBox22" node="0>2|21" />
+        <i3dMapping id="noodleSoupBox_Tension22" node="0>2|21|0" />
+        <i3dMapping id="noodleSoupBox23" node="0>2|22" />
+        <i3dMapping id="noodleSoupBox_Tension23" node="0>2|22|0" />
+        <i3dMapping id="noodleSoupBox24" node="0>2|23" />
+        <i3dMapping id="noodleSoupBox_Tension24" node="0>2|23|0" />
+    </i3dMappings>
+</vehicle>

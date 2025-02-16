@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_potatoChipsPallet</name>
+        <image>$data/objects/pallets/potatoChipsPallet/store_potatoChipsPallet.png</image>
+        <price>3000</price> <!-- doubled, because of doubled capacity -->
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>81152</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>26368</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/potatoChipsPallet/potatoChipsPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.9" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="POTATOCHIPS" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="potatoChipsPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="potatoChipsPallet01" tensionBeltNode="potatoChipsPallet_Tension01"/>
+            <object node="potatoChipsPallet02" tensionBeltNode="potatoChipsPallet_Tension02"/>
+            <object node="potatoChipsPallet03" tensionBeltNode="potatoChipsPallet_Tension03"/>
+            <object node="potatoChipsPallet04" tensionBeltNode="potatoChipsPallet_Tension04"/>
+            <object node="potatoChipsPallet05" tensionBeltNode="potatoChipsPallet_Tension05"/>
+            <object node="potatoChipsPallet06" tensionBeltNode="potatoChipsPallet_Tension06"/>
+            <object node="potatoChipsPallet07" tensionBeltNode="potatoChipsPallet_Tension07"/>
+            <object node="potatoChipsPallet08" tensionBeltNode="potatoChipsPallet_Tension08"/>
+            <object node="potatoChipsPallet09" tensionBeltNode="potatoChipsPallet_Tension09"/>
+            <object node="potatoChipsPallet10" tensionBeltNode="potatoChipsPallet_Tension10"/>
+            <object node="potatoChipsPallet11" tensionBeltNode="potatoChipsPallet_Tension11"/>
+            <object node="potatoChipsPallet12" tensionBeltNode="potatoChipsPallet_Tension12"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.804" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="potatoChipsPallet_component1" node="0>" />
+        <i3dMapping id="potatoChipsPallet01" node="0>0|0" />
+        <i3dMapping id="potatoChipsPallet_Tension01" node="0>0|0|0" />
+        <i3dMapping id="potatoChipsPallet02" node="0>0|1" />
+        <i3dMapping id="potatoChipsPallet_Tension02" node="0>0|1|0" />
+        <i3dMapping id="potatoChipsPallet03" node="0>0|2" />
+        <i3dMapping id="potatoChipsPallet_Tension03" node="0>0|2|0" />
+        <i3dMapping id="potatoChipsPallet04" node="0>0|3" />
+        <i3dMapping id="potatoChipsPallet_Tension04" node="0>0|3|0" />
+        <i3dMapping id="potatoChipsPallet05" node="0>0|4" />
+        <i3dMapping id="potatoChipsPallet_Tension05" node="0>0|4|0" />
+        <i3dMapping id="potatoChipsPallet06" node="0>0|5" />
+        <i3dMapping id="potatoChipsPallet_Tension06" node="0>0|5|0" />
+        <i3dMapping id="potatoChipsPallet07" node="0>0|6" />
+        <i3dMapping id="potatoChipsPallet_Tension07" node="0>0|6|0" />
+        <i3dMapping id="potatoChipsPallet08" node="0>0|7" />
+        <i3dMapping id="potatoChipsPallet_Tension08" node="0>0|7|0" />
+        <i3dMapping id="potatoChipsPallet09" node="0>0|8" />
+        <i3dMapping id="potatoChipsPallet_Tension09" node="0>0|8|0" />
+        <i3dMapping id="potatoChipsPallet10" node="0>0|9" />
+        <i3dMapping id="potatoChipsPallet_Tension10" node="0>0|9|0" />
+        <i3dMapping id="potatoChipsPallet11" node="0>0|10" />
+        <i3dMapping id="potatoChipsPallet_Tension11" node="0>0|10|0" />
+        <i3dMapping id="potatoChipsPallet12" node="0>0|11" />
+        <i3dMapping id="potatoChipsPallet_Tension12" node="0>0|11|0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>1" />
+        <i3dMapping id="dischargeNode" node="0>2" />
+    </i3dMappings>
+</vehicle>

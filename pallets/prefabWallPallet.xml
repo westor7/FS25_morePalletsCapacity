@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_prefabWallPallet</name>
+        <image>$data/objects/pallets/prefabWallPallet/store_prefabWallPallet.png</image>
+        <price>4950</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>48384</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>11264</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/prefabWallPallet/prefabWallPallet.i3d</filename>
+        <size width="2.55" length="1.8" height="2.65" lengthOffset="0" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="850">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="100"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="PREFABWALL" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" node="prefabWallPallet_vis">
+        <content>
+            <object node="prefabWall" tensionBeltNode="prefabWallTension"/>
+            <object node="palletStrap01" useAsTensionBeltMesh="false" />
+            <object node="palletStrap02" useAsTensionBeltMesh="false" />
+        </content>
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="0.7" volumeScale="2.5" supportsReverb="false"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="2.64" jointTransY="0.152" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="prefabWallPallet_component1" node="0>" />
+        <i3dMapping id="prefabWallPallet_vis" node="0>0" />
+        <i3dMapping id="prefabWall" node="0>0|0|0" />
+        <i3dMapping id="prefabWallTension" node="0>0|0|0|0" />
+        <i3dMapping id="palletStrap01" node="0>0|0|1" />
+        <i3dMapping id="palletStrap02" node="0>0|0|2" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|1" />
+        <i3dMapping id="dischargeNode" node="0>0|2" />
+    </i3dMappings>
+</vehicle>

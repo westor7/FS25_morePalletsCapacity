@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_planksPallet</name>
+        <image>$data/objects/pallets/planksPallet/store_planksPallet.png</image>
+        <price>1940</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>52224</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>8704</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/planksPallet/planksPallet.i3d</filename>
+        <size width="2.6" length="0.9" height="0.8" lengthOffset="0" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="50"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="PLANKS" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" node="planksPallet_vis">
+        <content>
+            <object node="planks01" tensionBeltNode="planks01"/>
+            <object node="planks02" tensionBeltNode="planks02"/>
+            <object node="planks03" tensionBeltNode="planks03"/>
+            <object node="planks04" tensionBeltNode="planks04"/>
+            <object node="planks05" tensionBeltNode="planks05"/>
+            <object node="planks06" tensionBeltNode="planks06"/>
+            <object node="planks07" tensionBeltNode="planks07"/>
+            <object node="planks08" tensionBeltNode="planks08"/>
+            <object node="planks09" tensionBeltNode="planks09"/>
+            <object node="planks10" tensionBeltNode="planks10"/>
+            <object node="planks11" tensionBeltNode="planks11"/>
+            <object node="planks12" tensionBeltNode="planks12"/>
+            <object node="planks13" tensionBeltNode="planks13"/>
+            <object node="planks14" tensionBeltNode="planks14"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="1" volumeScale="1.5" supportsReverb="false"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.75" jointTransY="0.096" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="planksPallet_main_component1" node="0>" />
+        <i3dMapping id="planksPallet_vis" node="0>0" />
+        <i3dMapping id="planks01" node="0>0|0|0" />
+        <i3dMapping id="planks02" node="0>0|0|1" />
+        <i3dMapping id="planks03" node="0>0|0|2" />
+        <i3dMapping id="planks04" node="0>0|0|3" />
+        <i3dMapping id="planks05" node="0>0|0|4" />
+        <i3dMapping id="planks06" node="0>0|0|5" />
+        <i3dMapping id="planks07" node="0>0|0|6" />
+        <i3dMapping id="planks08" node="0>0|0|7" />
+        <i3dMapping id="planks09" node="0>0|0|8" />
+        <i3dMapping id="planks10" node="0>0|0|9" />
+        <i3dMapping id="planks11" node="0>0|0|10" />
+        <i3dMapping id="planks12" node="0>0|0|11" />
+        <i3dMapping id="planks13" node="0>0|0|12" />
+        <i3dMapping id="planks14" node="0>0|0|13" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|1" />
+        <i3dMapping id="dischargeNode" node="0>0|2" />
+    </i3dMappings>
+</vehicle>

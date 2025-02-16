@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_strawberriesBoxPallet</name>
+        <image>$data/objects/pallets/strawberriesBoxPallet/store_strawberriesBoxPallet.png</image>
+        <price>450</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>129024</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>22016</indexBufferMemoryUsage>
+        <textureMemoryUsage>589824</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/strawberriesBoxPallet/strawberriesBoxPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="STRAWBERRY" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="strawberriesBoxPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="strawberriesBox01" tensionBeltNode="strawberriesBox_Tension01"/>
+            <object node="strawberriesBox02" tensionBeltNode="strawberriesBox_Tension02"/>
+            <object node="strawberriesBox03" tensionBeltNode="strawberriesBox_Tension03"/>
+            <object node="strawberriesBox04" tensionBeltNode="strawberriesBox_Tension04"/>
+            <object node="strawberriesBox05" tensionBeltNode="strawberriesBox_Tension05"/>
+            <object node="strawberriesBox06" tensionBeltNode="strawberriesBox_Tension06"/>
+            <object node="strawberriesBox07" tensionBeltNode="strawberriesBox_Tension07"/>
+            <object node="strawberriesBox08" tensionBeltNode="strawberriesBox_Tension08"/>
+            <object node="strawberriesBox09" tensionBeltNode="strawberriesBox_Tension09"/>
+            <object node="strawberriesBox10" tensionBeltNode="strawberriesBox_Tension10"/>
+            <object node="strawberriesBox11" tensionBeltNode="strawberriesBox_Tension11"/>
+            <object node="strawberriesBox12" tensionBeltNode="strawberriesBox_Tension12"/>
+            <object node="strawberriesBox13" tensionBeltNode="strawberriesBox_Tension13"/>
+            <object node="strawberriesBox14" tensionBeltNode="strawberriesBox_Tension14"/>
+            <object node="strawberriesBox15" tensionBeltNode="strawberriesBox_Tension15"/>
+            <object node="strawberriesBox16" tensionBeltNode="strawberriesBox_Tension16"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.771" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="strawberriesBoxPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="strawberriesBox01" node="0>1|0" />
+        <i3dMapping id="strawberriesBox_Tension01" node="0>1|0|1" />
+        <i3dMapping id="strawberriesBox02" node="0>1|1" />
+        <i3dMapping id="strawberriesBox_Tension02" node="0>1|1|0" />
+        <i3dMapping id="strawberriesBox03" node="0>1|2" />
+        <i3dMapping id="strawberriesBox_Tension03" node="0>1|2|0" />
+        <i3dMapping id="strawberriesBox04" node="0>1|3" />
+        <i3dMapping id="strawberriesBox_Tension04" node="0>1|3|0" />
+        <i3dMapping id="strawberriesBox05" node="0>1|4" />
+        <i3dMapping id="strawberriesBox_Tension05" node="0>1|4|0" />
+        <i3dMapping id="strawberriesBox06" node="0>1|5" />
+        <i3dMapping id="strawberriesBox_Tension06" node="0>1|5|0" />
+        <i3dMapping id="strawberriesBox07" node="0>1|6" />
+        <i3dMapping id="strawberriesBox_Tension07" node="0>1|6|0" />
+        <i3dMapping id="strawberriesBox08" node="0>1|7" />
+        <i3dMapping id="strawberriesBox_Tension08" node="0>1|7|0" />
+        <i3dMapping id="strawberriesBox09" node="0>1|8" />
+        <i3dMapping id="strawberriesBox_Tension09" node="0>1|8|0" />
+        <i3dMapping id="strawberriesBox10" node="0>1|9" />
+        <i3dMapping id="strawberriesBox_Tension10" node="0>1|9|0" />
+        <i3dMapping id="strawberriesBox11" node="0>1|10" />
+        <i3dMapping id="strawberriesBox_Tension11" node="0>1|10|0" />
+        <i3dMapping id="strawberriesBox12" node="0>1|11" />
+        <i3dMapping id="strawberriesBox_Tension12" node="0>1|11|0" />
+        <i3dMapping id="strawberriesBox13" node="0>1|12" />
+        <i3dMapping id="strawberriesBox_Tension13" node="0>1|12|0" />
+        <i3dMapping id="strawberriesBox14" node="0>1|13" />
+        <i3dMapping id="strawberriesBox_Tension14" node="0>1|13|0" />
+        <i3dMapping id="strawberriesBox15" node="0>1|14" />
+        <i3dMapping id="strawberriesBox_Tension15" node="0>1|14|0" />
+        <i3dMapping id="strawberriesBox16" node="0>1|15" />
+        <i3dMapping id="strawberriesBox_Tension16" node="0>1|15|0" />
+    </i3dMappings>
+</vehicle>

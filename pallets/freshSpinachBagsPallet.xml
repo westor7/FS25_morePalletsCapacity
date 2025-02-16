@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_freshSpinachBagsPallet</name>
+        <image>$data/objects/pallets/freshSpinachBagsPallet/store_freshSpinachBagsPallet.png</image>
+        <price>775</price>
+        <category>pallets</category>
+        <brand>NONE</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>47104</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>17664</indexBufferMemoryUsage>
+        <textureMemoryUsage>262144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings centerIcon="true" cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/freshSpinachBagsPallet/freshSpinachBagsPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60" />
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SPINACH_BAGS" capacity="10000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="freshSpinachBagPallet_main_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="freshSpinachBags01" tensionBeltNode="freshSpinachBags_Tension01"/>
+            <object node="freshSpinachBags02" tensionBeltNode="freshSpinachBags_Tension02"/>
+            <object node="freshSpinachBags03" tensionBeltNode="freshSpinachBags_Tension03"/>
+            <object node="freshSpinachBags04" tensionBeltNode="freshSpinachBags_Tension04"/>
+            <object node="freshSpinachBags05" tensionBeltNode="freshSpinachBags_Tension05"/>
+            <object node="freshSpinachBags06" tensionBeltNode="freshSpinachBags_Tension06"/>
+            <object node="freshSpinachBags07" tensionBeltNode="freshSpinachBags_Tension07"/>
+            <object node="freshSpinachBags08" tensionBeltNode="freshSpinachBags_Tension08"/>
+            <object node="freshSpinachBags09" tensionBeltNode="freshSpinachBags_Tension09"/>
+            <object node="freshSpinachBags10" tensionBeltNode="freshSpinachBags_Tension10"/>
+            <object node="freshSpinachBags11" tensionBeltNode="freshSpinachBags_Tension11"/>
+            <object node="freshSpinachBags12" tensionBeltNode="freshSpinachBags_Tension12"/>
+            <object node="freshSpinachBags13" tensionBeltNode="freshSpinachBags_Tension13"/>
+            <object node="freshSpinachBags14" tensionBeltNode="freshSpinachBags_Tension14"/>
+            <object node="freshSpinachBags15" tensionBeltNode="freshSpinachBags_Tension15"/>
+            <object node="freshSpinachBags16" tensionBeltNode="freshSpinachBags_Tension16"/>
+            <object node="freshSpinachBags17" tensionBeltNode="freshSpinachBags_Tension17"/>
+            <object node="freshSpinachBags18" tensionBeltNode="freshSpinachBags_Tension18"/>
+            <object node="freshSpinachBags19" tensionBeltNode="freshSpinachBags_Tension19"/>
+            <object node="freshSpinachBags20" tensionBeltNode="freshSpinachBags_Tension20"/>
+            <object node="freshSpinachBags21" tensionBeltNode="freshSpinachBags_Tension21"/>
+            <object node="freshSpinachBags22" tensionBeltNode="freshSpinachBags_Tension22"/>
+            <object node="freshSpinachBags23" tensionBeltNode="freshSpinachBags_Tension23"/>
+            <object node="freshSpinachBags24" tensionBeltNode="freshSpinachBags_Tension24"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillWood" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.747" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="freshSpinachBagPallet_main_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="dischargeNode" node="0>1" />
+        <i3dMapping id="freshSpinachBags01" node="0>2|0" />
+        <i3dMapping id="freshSpinachBags_Tension01" node="0>2|0|1" />
+        <i3dMapping id="freshSpinachBags02" node="0>2|1" />
+        <i3dMapping id="freshSpinachBags_Tension02" node="0>2|1|0" />
+        <i3dMapping id="freshSpinachBags03" node="0>2|2" />
+        <i3dMapping id="freshSpinachBags_Tension03" node="0>2|2|0" />
+        <i3dMapping id="freshSpinachBags04" node="0>2|3" />
+        <i3dMapping id="freshSpinachBags_Tension04" node="0>2|3|0" />
+        <i3dMapping id="freshSpinachBags05" node="0>2|4" />
+        <i3dMapping id="freshSpinachBags_Tension05" node="0>2|4|0" />
+        <i3dMapping id="freshSpinachBags06" node="0>2|5" />
+        <i3dMapping id="freshSpinachBags_Tension06" node="0>2|5|0" />
+        <i3dMapping id="freshSpinachBags07" node="0>2|6" />
+        <i3dMapping id="freshSpinachBags_Tension07" node="0>2|6|0" />
+        <i3dMapping id="freshSpinachBags08" node="0>2|7" />
+        <i3dMapping id="freshSpinachBags_Tension08" node="0>2|7|0" />
+        <i3dMapping id="freshSpinachBags09" node="0>2|8" />
+        <i3dMapping id="freshSpinachBags_Tension09" node="0>2|8|0" />
+        <i3dMapping id="freshSpinachBags10" node="0>2|9" />
+        <i3dMapping id="freshSpinachBags_Tension10" node="0>2|9|0" />
+        <i3dMapping id="freshSpinachBags11" node="0>2|10" />
+        <i3dMapping id="freshSpinachBags_Tension11" node="0>2|10|0" />
+        <i3dMapping id="freshSpinachBags12" node="0>2|11" />
+        <i3dMapping id="freshSpinachBags_Tension12" node="0>2|11|0" />
+        <i3dMapping id="freshSpinachBags13" node="0>2|12" />
+        <i3dMapping id="freshSpinachBags_Tension13" node="0>2|12|0" />
+        <i3dMapping id="freshSpinachBags14" node="0>2|13" />
+        <i3dMapping id="freshSpinachBags_Tension14" node="0>2|13|0" />
+        <i3dMapping id="freshSpinachBags15" node="0>2|14" />
+        <i3dMapping id="freshSpinachBags_Tension15" node="0>2|14|0" />
+        <i3dMapping id="freshSpinachBags16" node="0>2|15" />
+        <i3dMapping id="freshSpinachBags_Tension16" node="0>2|15|0" />
+        <i3dMapping id="freshSpinachBags17" node="0>2|16" />
+        <i3dMapping id="freshSpinachBags_Tension17" node="0>2|16|0" />
+        <i3dMapping id="freshSpinachBags18" node="0>2|17" />
+        <i3dMapping id="freshSpinachBags_Tension18" node="0>2|17|0" />
+        <i3dMapping id="freshSpinachBags19" node="0>2|18" />
+        <i3dMapping id="freshSpinachBags_Tension19" node="0>2|18|0" />
+        <i3dMapping id="freshSpinachBags20" node="0>2|19" />
+        <i3dMapping id="freshSpinachBags_Tension20" node="0>2|19|0" />
+        <i3dMapping id="freshSpinachBags21" node="0>2|20" />
+        <i3dMapping id="freshSpinachBags_Tension21" node="0>2|20|0" />
+        <i3dMapping id="freshSpinachBags22" node="0>2|21" />
+        <i3dMapping id="freshSpinachBags_Tension22" node="0>2|21|0" />
+        <i3dMapping id="freshSpinachBags23" node="0>2|22" />
+        <i3dMapping id="freshSpinachBags_Tension23" node="0>2|22|0" />
+        <i3dMapping id="freshSpinachBags24" node="0>2|23" />
+        <i3dMapping id="freshSpinachBags_Tension24" node="0>2|23|0" />
+    </i3dMappings>
+</vehicle>
